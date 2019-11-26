@@ -1,5 +1,3 @@
-# dmcpatrimonio.github.io
-
 Documentação, Modelagem e Conservação do Patrimônio
 ===================================================
 
