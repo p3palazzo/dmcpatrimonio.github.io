@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="post">
+
+  {% if page.title %}
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    {% if page.subtitle %}
+    <p class="subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+  {% endif %}
+
+  {% if page.author %}
+  <dl>
+    {% for author in page.author %}
+    <dt class="author">{{ author.name | escape }}</dt>
+    <dd class="author">{{ author.affiliation }}</dd>
+    {% endfor %}
+  </dl>
+  {% endif %}
+
+  {% if page.date %}
+  <p class="date">{{ page.date | date: "%e %B %Y" }}</p>
+  {% endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
