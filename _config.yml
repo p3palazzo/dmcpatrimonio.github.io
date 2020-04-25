@@ -1,5 +1,6 @@
 # Geral {{{1
 title: Documentação, Modelagem e Conservação do Patrimônio
+author: Grupo de pesquisa
 email: labeurbe@unb.br
 description: >-
   Grupo de pesquisa interinstitucional voltado para abordagens
@@ -7,29 +8,28 @@ description: >-
   cultural, com foco na arquitetura tradicional do interior continental do
   Brasil e na construção moderna. Ferramentas e metodologias de análise física,
   modelagem digital, sistemas de informação e gestão.
-baseurl: ""
+baseurl: "/"
 url: "https://dmcpatrimonio.github.io"
 lang: pt
-github_username:  dmcpatrimonio
 
 # Conteúdo {{{1
+source: "/"
+header_pages:
+  - equipe.md
+  - atual.md
 
-# Build settings {{{1
+# Template {{{1
 theme: minima
 minima:
   date_format : "%e %B %Y"
   social_links:
     github    : https://github.com/dmcpatrimonio
-header_pages:
-  - equipe.md
-  - atual.md
 
 # Configurações diversas {{{1
 permalink: pretty
 markdown: kramdown
 kramdown:
   auto_ids: true
-  header_offset: 1
   transliterated_header_ids: true
 relative_links:
   enabled: true
@@ -67,8 +67,6 @@ exclude: # {{{1
   - .jekyll-cache/
   - gemfiles/
   - node_modules/
-  - .vendor/bundle/
-  - .vendor/cache/
-  - .vendor/gems/
-  - .vendor/ruby/
+  - .vendor
+
 # vim: set foldmethod=marker :

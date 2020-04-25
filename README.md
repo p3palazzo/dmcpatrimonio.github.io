@@ -1,9 +1,9 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-# title : "Sobre o grupo"
 layout: home
+title : Documentação, Modelagem e Conservação
 ---
+
+![](https://github.com/dmcpatrimonio/arqtrad/workflows/Jekyll%20site%20CI/badge.svg?branch=master)
 
 O Grupo de Pesquisa Documentação, Modelagem e Conservação do Patrimônio
 nasce da demanda por um locus institucional, na capital federal, para
@@ -23,12 +23,11 @@ Escola Politécnica da Universidade de São Paulo, a implantação do Canteiro
 Experimental vinculado à FAU–UnB, e pesquisas sobre construção em terra na
 Universidade Federal da Bahia.
 
-
 * * * *
 
 Documentação, Modelagem e Conservação do Patrimônio (c) 2020 by
-pesquisadores do grupo conforme espelho oficial no [Diretório dos Grupos
-de Pesquisa do CNPq](dgp.cnpq.br/dgp/espelhogrupo/0050065016863402)
+pesquisadores do grupo conforme espelho oficial no
+[Diretório dos Grupos de Pesquisa do CNPq](http://dgp.cnpq.br/dgp/espelhogrupo/0050065016863402)
  
 Documentação, Modelagem e Conservação do Patrimônio is licensed under a
 Creative Commons Attribution-ShareAlike 3.0 Unported License.
