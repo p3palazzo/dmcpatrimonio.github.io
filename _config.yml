@@ -1,8 +1,9 @@
 # Geral {{{1
 # =====
 title: Documentação, Modelagem e Conservação do Patrimônio
-author: Grupo de pesquisa
-email: labeurbe@unb.br
+author:
+- name: Grupo de pesquisa
+  email: labeurbe@unb.br
 description: >-
   Grupo de pesquisa interinstitucional voltado para abordagens
   interdisciplinares na documentação, conservação e valorização do patrimônio
@@ -85,7 +86,6 @@ defaults:
 
 # Template {{{1
 # ========
-#theme: minima
 remote_theme: p3palazzo/minima-scholar
 minima:
   date_format : "%e %B %Y"
