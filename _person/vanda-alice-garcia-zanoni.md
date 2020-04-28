@@ -11,7 +11,7 @@ affiliation:
     startDate: 2018-02-09
 worksFor:
 - Organization: Universidade de Brasília
-  department: Tecnologia da Arquitetura e do Urbanismo
+  department: Departamento de Tecnologia da Arquitetura e do Urbanismo
   Role:
   - name: Professor Adjunto
     startDate:

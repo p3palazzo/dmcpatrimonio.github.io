@@ -17,7 +17,7 @@ award:
     startDate:
 worksFor:
 - Organization: Universidade de Brasília
-  department: Teoria e História da Arquitetura e do Urbanismo
+  department: Departamento de Teoria e História da Arquitetura e do Urbanismo
   Role:
   - name: Professor Associado
     startDate:
