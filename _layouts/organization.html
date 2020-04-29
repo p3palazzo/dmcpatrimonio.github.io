@@ -42,22 +42,25 @@ layout: default
 
     {{ content }}
 
-    <h2 id="integrantes">Integrantes</h2>
-    {% assign members = site.person %}
-    <ul class="members">
-    {%- for member in members -%}
-      {%- assign group = member.affiliation | where: group.Organization, page.slug -%}
+    {%- assign members = site.person -%}
+    {%- capture memberlist -%}
+      {%- for member in members -%}
+        {%- assign group = member.affiliation | where: group.Organization, page.slug -%}
         {%- for item in group -%}
           {%- if item.Organization == page.slug -%}
           <li itemprop="member" itemscope itemtype="http://schema.org/Person">
-            <a href="{{ member.url }}">
-              {{ member.givenName }} {{ member.additionalName }} {{ member.familyName }}
-            </a>
+            <a href="{{ member.url }}">{{ member.givenName }} {{ member.additionalName }} {{ member.familyName }}</a>
           </li>
-        {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
       {%- endfor -%}
-    {% endfor %}
+    {%- endcapture -%}
+    {%- if memberlist.size > 0 -%}
+    <h2 id="integrantes">Integrantes</h2>
+    <ul class="members">
+      {{ memberlist }}
     </ul>
+    {%- endif -%}
   </div>
 </article>
 <!-- vim: set ft=liquid shiftwidth=2 tabstop=2 expandtab foldmethod=indent : -->
