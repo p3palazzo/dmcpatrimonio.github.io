@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/Organization" class="organization">
+  <header class="post-header">
+    {% if page.image %}
+      <div class="page-image">
+        <img title="{{ page.name }}" alt="Imagem representativa" src="{{ page.image }}" />
+      </div>
+    {% endif %}
+    {% if page.date %}
+      <p class="date">Última atualização: {{ page.date | date: "%e %B %Y" }}</p>
+    {% endif %}
+    <h1 class="post-title">{{ page.name | escape }}</h1>
+    {% if page.parentOrganization %}
+      {% assign parent = site.organization | where: "identifier", page.parentOrganization %}
+      <p class="parentOrganization" itemprop="parentOrganization" itemscope itemtype="http://schema.org/Organization">
+        Vinculado a: 
+        <a itemprop="url" href="{{ parent.url }}">{{ parent.name }}</a>
+      </p>
+    {% endif %}
+    {% if page.url %}
+      <p class="url" itemprop="url">
+        <a href="{{ page.url }}">Site próprio</a>
+      </p>
+    {% endif %}
+    {% if page.sameAs %}
+    {% endif %}
+    {% if page.email %}
+    {% endif %}
+    {% if page.telephone %}
+    {% endif %}
+  </header>
+  <div class="post-content">
+    <p class="description" itemprop="description">{{ page.description }} </p>
+    {% if page.keywords %}
+    <ul class="keywords" itemprop="keywords">
+      <span class="keywords-title">Palavras-chave:</span>
+      {% for keyword in page.keywords %}
+        <li>{{ keyword }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {{ content }}
+  </div>
+</article>
+<!-- vim: set ft=liquid shiftwidth=2 tabstop=2 expandtab foldmethod=indent : -->

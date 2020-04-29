@@ -1,9 +1,11 @@
 ---
 name: "Kraftterra"
-identifier: 
+identifier: kraftterra
 image:
-parentOrganization: https://dmcpatrimonio.github.io
+logo:
+parentOrganization: construcao
 url: 
+keywords:
 description: >-
   Desenvolvimento e análise do desempenho técnico de componentes e
   elementos construtivos de terra com a incorporação de fibras de papel

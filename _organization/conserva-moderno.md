@@ -1,9 +1,11 @@
 ---
 name: "Avaliação do estado de conservação do patrimônio moderno"
-identifier: 
+identifier: conserva-moderno
 image:
-parentOrganization: https://dmcpatrimonio.github.io
+logo:
+parentOrganization: patrimonio
 url: 
+keywords:
 description: >-
   As pesquisas visam a colaborar com o avanço das discussões sobre os
   desafios da conservação e reabilitação das edificações caracterizadas

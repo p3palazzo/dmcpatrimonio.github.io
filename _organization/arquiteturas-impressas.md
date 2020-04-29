@@ -1,9 +1,11 @@
 ---
-name: "Arquitetura impressas"
-identifier: 
+name: "Arquiteturas impressas"
+identifier: arquiteturas impressas
 image:
-parentOrganization: https://dmcpatrimonio.github.io
+logo:
+parentOrganization: patrimonio
 url: 
+keywords:
 description: >-
   Por "arquitetura impressa" passa-se a entender a documentação,
   imagética ou por escrito, relativa à produção da arquitetura, desde os

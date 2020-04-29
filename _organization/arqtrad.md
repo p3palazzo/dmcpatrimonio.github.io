@@ -1,9 +1,16 @@
 ---
 name: "Clássico, tradicional, eclético: Arquitetura brasileira no longo século XIX"
 identifier: arqtrad
-image:
-parentOrganization: https://dmcpatrimonio.github.io
+image: https://avatars3.githubusercontent.com/t/3543678
+logo:
+parentOrganization: patrimonio
 url: https://dmcpatrimonio.github.io/arqtrad
+keywords:
+- Arquitetura tradicional
+- Ecletismo
+- Neocolonial
+- Século XIX
+- Brasil
 description: >-
   Este projeto de pesquisa versa sobre a produção arquitetônica e
   urbanística de 1780 a 1930, com ênfase na formação dos campos de
