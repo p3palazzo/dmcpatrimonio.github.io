@@ -3,7 +3,8 @@ name: "Preservação e historiografia do patrimônio edificado"
 identifier: patrimonio
 image:
 logo:
-url:
+sameAs:
+subjectOf: linhas
 keywords:
 - Teoria e história da arquitetura
 - Patrimônio, cultura e identidade

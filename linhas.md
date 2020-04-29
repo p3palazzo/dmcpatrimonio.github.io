@@ -1,6 +1,6 @@
 ---
 layout: page
-title : Linhas e projetos de pesquisa
+title : Linhas de pesquisa
 date  : 2020-04-28
 ---
 

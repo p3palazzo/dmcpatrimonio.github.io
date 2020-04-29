@@ -3,6 +3,21 @@ layout: default
 ---
 <article itemscope itemtype="http://schema.org/Organization" class="organization">
   <header class="post-header">
+    <div class="breadcrumb">
+    {% if page.parentOrganization %}
+      {%- assign parent = site.organization | where: "identifier", page.parentOrganization | first -%}
+      {%- assign mainpage = parent.subjectOf | append: ".md" -%}
+    {% elsif page.subjectOf %}
+      {%- assign mainpage = page.subjectOf | append: ".md" -%}
+    {% endif %}
+    {%- assign subject = site.pages | where: "path", mainpage | first -%}
+      <span><a href="{{ subject.url }}">{{ subject.title }}</a></span> › 
+    {% if page.parentOrganization %}
+      <span class="parentOrganization" itemscope itemtype="http://schema.org/Organization">
+        <a itemprop="url" href="{{ parent.url }}">{{ parent.name }}</a> › 
+      </span>
+    {% endif %}
+    </div>
     {% if page.image %}
       <div class="page-image">
         <img title="{{ page.name }}" alt="Imagem representativa" src="{{ page.image }}" />
@@ -12,14 +27,7 @@ layout: default
       <p class="date">Última atualização: {{ page.date | date: "%e %B %Y" }}</p>
     {% endif %}
     <h1 class="post-title">{{ page.name | escape }}</h1>
-    {% if page.parentOrganization %}
-      {% assign parent = site.organization | where: "identifier", page.parentOrganization | first %}
-      <p class="parentOrganization" itemprop="parentOrganization" itemscope itemtype="http://schema.org/Organization">
-        Vinculado a: 
-        <a itemprop="url" href="{{ parent.url }}">{{ parent.name }}</a>
-      </p>
-    {% endif %}
-    {% if page.sameAs %}
+    {%- if page.sameAs -%}
       <p class="url" itemprop="url">
         <a href="{{ page.sameAs }}">Site próprio</a>
       </p>
@@ -42,16 +50,28 @@ layout: default
 
     {{ content }}
 
+    {%- assign projects = site.organization | where: "parentOrganization", page.slug -%}
+    {%- if projects[0] -%}
+      <h2 id="projetos">Projetos de pesquisa</h2>
+      <ul class="projects">
+        {%- for project in projects -%}
+          <li itemscope itemtype="http://schema.org/Organization">
+            <a href="{{ project.url }}">{{ project.name }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
     {%- assign members = site.person -%}
     {%- capture memberlist -%}
       {%- for member in members -%}
-        {%- assign group = member.affiliation | where: group.Organization, page.slug -%}
+        {%- assign group = member.affiliation | where: "Organization", page.slug -%}
         {%- for item in group -%}
           {%- if item.Organization == page.slug -%}
-          <li itemprop="member" itemscope itemtype="http://schema.org/Person">
+          <li itemscope itemtype="http://schema.org/Person">
             <a href="{{ member.url }}">{{ member.givenName }} {{ member.additionalName }} {{ member.familyName }}</a>
           </li>
-          {%- endif -%}
+          {% endif %}
         {%- endfor -%}
       {%- endfor -%}
     {%- endcapture -%}

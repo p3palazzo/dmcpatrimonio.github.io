@@ -1,5 +1,5 @@
 ---
-layout: members
-title : Integrantes do grupo de pesquisa
+layout: team
+title : Equipe
 date  : 2020-04-28
 ---
