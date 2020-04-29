@@ -3,7 +3,6 @@ name: "Preservação e historiografia do patrimônio edificado"
 identifier: patrimonio
 image:
 logo:
-parentOrganization: https://dmcpatrimonio.github.io
 url:
 keywords:
 - Teoria e história da arquitetura
