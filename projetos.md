@@ -19,6 +19,11 @@ construção, Ensaios não destrutivos
 
 ### Projetos de pesquisa ###
 
+- [Documentação e modelagem da arquitetura tradicional](_organization/doctrad.md)
+- [Ediquali impressão 3D - Processo construtivo com argamassa de terra impressa](_organization/ediquali-impressao.md)
+- [Ediquali terra - Desenvolvimento e aperfeiçoamento de materiais, componentes, técnicas, sistemas e processos construtivos](_organization/ediquali-terra.md)
+- [Kraftterra](_organization/kraftterra.md)
+
 Preservação e historiografia do patrimônio edificado
 ----------------------------------------------------
 
@@ -32,4 +37,8 @@ apropriação da arquitetura: imprensa, literatura e crítica de arte.
 cultura e identidade, Planalto Central, Brasília, Pesquisa qualitativa
 
 ### Projetos de pesquisa ###
+
+- [Arquiteturas impressas](_organization/arquiteturas-impressas.md)
+- [Avaliação do estado de conservação do patrimônio moderno](_organization/conserva-moderno.md)
+- [Clássico, tradicional, eclético: Arquitetura brasileira no longo século XIX](_organization/arqtrad.md)
 
