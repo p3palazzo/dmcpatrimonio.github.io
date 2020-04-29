@@ -1,10 +1,10 @@
 ---
-name: "Kraftterra"
+title: "Kraftterra"
 identifier: kraftterra
 image:
 logo:
 parentOrganization: construcao
-url: 
+sameAs: 
 keywords:
 description: >-
   Desenvolvimento e análise do desempenho técnico de componentes e

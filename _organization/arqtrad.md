@@ -1,5 +1,5 @@
 ---
-name: "Clássico, tradicional, eclético: Arquitetura brasileira no longo século XIX"
+title: "Clássico, tradicional, eclético: Arquitetura brasileira no longo século XIX"
 identifier: arqtrad
 image: https://avatars3.githubusercontent.com/t/3543678
 logo:

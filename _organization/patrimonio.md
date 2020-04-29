@@ -1,10 +1,10 @@
 ---
-name: "Preservação e historiografia do patrimônio edificado"
+title: "Preservação e historiografia do patrimônio edificado"
 identifier: patrimonio
 image:
 logo:
 sameAs:
-subjectOf: linhas
+parentOrganization: linhas
 keywords:
 - Teoria e história da arquitetura
 - Patrimônio, cultura e identidade

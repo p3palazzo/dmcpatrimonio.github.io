@@ -1,10 +1,10 @@
 ---
-name: "Arquiteturas impressas"
+title: "Arquiteturas impressas"
 identifier: arquiteturas impressas
 image:
 logo:
 parentOrganization: patrimonio
-url: 
+sameAs: 
 keywords:
 description: >-
   Por "arquitetura impressa" passa-se a entender a documentação,

@@ -1,10 +1,10 @@
 ---
-name: "Construção: modelos, técnicas e tradições"
+title: "Construção: modelos, técnicas e tradições"
 identifier: construcao
 image:
 logo:
-parentOrganization: https://dmcpatrimonio.github.io
-url:
+parentOrganization: linhas
+sameAs:
 keywords:
 - Arquitetura em terra
 - Concreto armado

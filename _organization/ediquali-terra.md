@@ -1,10 +1,10 @@
 ---
-name: "Ediquali terra - Desenvolvimento e aperfeiçoamento de materiais, componentes, técnicas, sistemas e processos construtivos"
+title: "Ediquali terra - Desenvolvimento e aperfeiçoamento de materiais, componentes, técnicas, sistemas e processos construtivos"
 identifier: ediquali-terra
 image:
 logo:
 parentOrganization: construcao
-url: 
+sameAs: 
 keywords:
 description: >-
   Edificação e Qualificação em Arquitetura de Terra. Análises, estudos,

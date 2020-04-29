@@ -1,10 +1,10 @@
 ---
-name: "Ediquali impressão 3D - Processo construtivo com argamassa de terra impressa"
+title: "Ediquali impressão 3D - Processo construtivo com argamassa de terra impressa"
 identifier: ediquali-impressao
 image:
 logo:
 parentOrganization: construcao
-url: 
+sameAs: 
 keywords:
 description: >-
   Desenvolvimento de impressora 3D para extrusão de argamassas e

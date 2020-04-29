@@ -2,6 +2,7 @@
 layout: page
 title : Linhas de pesquisa
 date  : 2020-04-28
+identifier: linhas
 ---
 
 Construção: modelos, técnicas e tradições

@@ -1,10 +1,10 @@
 ---
-name: "Documentação e modelagem da arquitetura tradicional"
+title: "Documentação e modelagem da arquitetura tradicional"
 identifier: doctrad
 image:
 logo:
 parentOrganization: construcao
-url: 
+sameAs: 
 keywords:
 description: >-
 ---

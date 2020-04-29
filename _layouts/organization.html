@@ -6,27 +6,38 @@ layout: default
     <div class="breadcrumb">
     {% if page.parentOrganization %}
       {%- assign parent = site.organization | where: "identifier", page.parentOrganization | first -%}
-      {%- assign mainpage = parent.subjectOf | append: ".md" -%}
-    {% elsif page.subjectOf %}
-      {%- assign mainpage = page.subjectOf | append: ".md" -%}
+      {%- unless parent -%}
+        {%- assign parentpath = page.parentOrganization | append: ".md" -%}
+        {%- assign parent = site.pages | where: "path", parentpath | first -%}
+      {%- endunless -%}
     {% endif %}
-    {%- assign subject = site.pages | where: "path", mainpage | first -%}
-      <span><a href="{{ subject.url }}">{{ subject.title }}</a></span> › 
     {% if page.parentOrganization %}
       <span class="parentOrganization" itemscope itemtype="http://schema.org/Organization">
-        <a itemprop="url" href="{{ parent.url }}">{{ parent.name }}</a> › 
+        <a itemprop="url" href="{{ parent.url }}">{{ parent.title }}</a> › 
       </span>
     {% endif %}
     </div>
     {% if page.image %}
       <div class="page-image">
-        <img title="{{ page.name }}" alt="Imagem representativa" src="{{ page.image }}" />
+        <img title="{{ page.title }}" alt="Imagem representativa" src="{{ page.image }}" />
       </div>
     {% endif %}
     {% if page.date %}
       <p class="date">Última atualização: {{ page.date | date: "%e %B %Y" }}</p>
     {% endif %}
-    <h1 class="post-title">{{ page.name | escape }}</h1>
+
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+  {%- if page.collection -%}
+  {%- else -%}
+    {%- assign groups = site.organization | where: "parentOrganization", page.slug -%}
+    {%- for group in groups %}
+      {% include organization.html %}
+    {%- endfor -%}
+  {%- endif %}
+
     {%- if page.sameAs -%}
       <p class="url" itemprop="url">
         <a href="{{ page.sameAs }}">Site próprio</a>
@@ -36,8 +47,6 @@ layout: default
     {% endif %}
     {% if page.telephone %}
     {% endif %}
-  </header>
-  <div class="post-content">
     <p class="description" itemprop="description">{{ page.description }} </p>
     {% if page.keywords %}
     <ul class="keywords" itemprop="keywords">
@@ -56,7 +65,7 @@ layout: default
       <ul class="projects">
         {%- for project in projects -%}
           <li itemscope itemtype="http://schema.org/Organization">
-            <a href="{{ project.url }}">{{ project.name }}</a>
+            <a href="{{ project.url }}">{{ project.title }}</a>
           </li>
         {%- endfor -%}
       </ul>
@@ -65,8 +74,8 @@ layout: default
     {%- assign members = site.person -%}
     {%- capture memberlist -%}
       {%- for member in members -%}
-        {%- assign group = member.affiliation | where: "Organization", page.slug -%}
-        {%- for item in group -%}
+        {%- assign affiliates = member.affiliation | where: "Organization", page.slug -%}
+        {%- for item in affiliates -%}
           {%- if item.Organization == page.slug -%}
           <li itemscope itemtype="http://schema.org/Person">
             <a href="{{ member.url }}">{{ member.givenName }} {{ member.additionalName }} {{ member.familyName }}</a>

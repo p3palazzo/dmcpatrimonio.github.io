@@ -1,10 +1,10 @@
 ---
-name: "Avaliação do estado de conservação do patrimônio moderno"
+title: "Avaliação do estado de conservação do patrimônio moderno"
 identifier: conserva-moderno
 image:
 logo:
 parentOrganization: patrimonio
-url: 
+sameAs: 
 keywords:
 description: >-
   As pesquisas visam a colaborar com o avanço das discussões sobre os
