@@ -1,0 +1,46 @@
+{%- if page.collection -%}
+<h2>Equipe</h2>
+{% endif %}
+{%- for role in site.data.roles -%}
+  {%- capture memberlist -%}
+    {%- for member in members -%}
+      {%- assign affiliates = member.affiliation | where: "Organization", project -%}
+      {%- for affiliate in affiliates -%}
+        {%- assign teamrole = affiliate.Role | where: "endDate", nil | where: "name", role -%}
+        {%- if teamrole.size > 0 -%}
+        <li itemscope itemtype="http://schema.org/Person">
+          <a href="{{ member.url }}">{{ member.givenName }} {{ member.additionalName }} {{ member.familyName }}</a>
+        </li>
+        {% endif %}
+      {%- endfor -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- if memberlist.size > 0 -%}
+  <h3 class="team">{{ role }}</h3>
+  <ul class="list members">
+    {{ memberlist }}
+  </ul>
+  {%- endif -%}
+{% endfor %}
+
+{%-capture alumni -%}
+  {%- for member in members -%}
+    {%- assign affiliates = member.affiliation | where: "Organization", project -%}
+    {%- for affiliate in affiliates -%}
+      {%- assign currentrole = affiliate.Role | where: "endDate", true -%}
+      {%- if teamrole.size > 0 -%}
+      <li itemscope itemtype="http://schema.org/Person">
+        <a href="{{ member.url }}">{{ member.givenName }} {{ member.additionalName }} {{ member.familyName }}</a>
+      </li>
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- if alumni.size > 0 -%}
+  <h3 class="team">Egressos</h3>
+  <ul class="list members">
+    {{ alumni }}
+  </ul>
+{% endif %}
+
+<!-- vim: set ft=liquid shiftwidth=2 tabstop=2 expandtab foldmethod=indent : -->

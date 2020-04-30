@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+{%- assign slug = page.name | split: "." | first -%}
+{%- assign members = site.person | sort: "givenName" | sort: "familyName" -%}
+{%- assign baseurl = site.baseurl | remove: "/" -%}
+{%- assign project = page.identifier | default: baseurl | default: site.github_username -%}
 <article class="post">
 
   <header class="post-header">
@@ -9,6 +13,10 @@ layout: default
 
   <div class="post-content">
     {{ content }}
+
+    {%- for lists in page.lists -%}
+      {% include {{ lists | append: ".html" }} %}
+    {% endfor %}
   </div>
 
 </article>

@@ -8,11 +8,9 @@ affiliation:
   Role:
   - name: Pesquisador
     startDate: 2019-03-19
-  - name: Mestrado
-    startDate: 2017-03-20
-    endDate: 2019-03-18
 - Organization: arqtrad
   Role:
   - name: Mestrado
-    startDate: 2018-06-18
+    startDate: 2017-03-20
+    endDate: 2019-03-18
 ---

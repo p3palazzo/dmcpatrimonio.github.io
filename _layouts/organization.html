@@ -2,6 +2,9 @@
 layout: default
 ---
 {%- assign slug = page.name | split: "." | first -%}
+{%- assign members = site.person | sort: "givenName" | sort: "familyName" -%}
+{%- assign baseurl = site.baseurl | remove: "/" -%}
+{%- assign project = page.identifier | default: baseurl | default: site.github_username -%}
 <article itemscope itemtype="{{ page.itemtype }}" class="post">
   <header class="post-header">
     <div class="breadcrumb">
@@ -73,25 +76,7 @@ layout: default
       </ul>
     {%- endif -%}
 
-    {%- assign members = site.person | sort: "familyName" -%}
-    {%- capture memberlist -%}
-      {%- for member in members -%}
-        {%- assign affiliates = member.affiliation | where: "Organization", page.slug -%}
-        {%- for item in affiliates -%}
-          {%- if item.Organization == page.slug -%}
-          <li itemscope itemtype="http://schema.org/Person">
-            <a href="{{ member.url }}">{{ member.givenName }} {{ member.additionalName }} {{ member.familyName }}</a>
-          </li>
-          {% endif %}
-        {%- endfor -%}
-      {%- endfor -%}
-    {%- endcapture -%}
-    {%- if memberlist.size > 0 -%}
-    <h2 id="integrantes">Integrantes</h2>
-    <ul class="list members">
-      {{ memberlist }}
-    </ul>
-    {%- endif -%}
+    {% include team.html %}
 
   {%- else -%}
     {{ content }}
