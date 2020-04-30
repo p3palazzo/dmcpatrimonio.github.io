@@ -73,7 +73,7 @@ layout: default
       </ul>
     {%- endif -%}
 
-    {%- assign members = site.person -%}
+    {%- assign members = site.person | sort: "familyName" -%}
     {%- capture memberlist -%}
       {%- for member in members -%}
         {%- assign affiliates = member.affiliation | where: "Organization", page.slug -%}

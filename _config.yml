@@ -17,6 +17,7 @@ lang: pt
 # Conteúdo {{{1
 # ========
 header_pages:
+  - about.md
   - team.md
   - linhas.md
   - biblio.md
