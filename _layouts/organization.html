@@ -2,7 +2,7 @@
 layout: default
 ---
 {%- assign slug = page.name | split: "." | first -%}
-<article itemscope itemtype="http://schema.org/Organization" class="organization">
+<article itemscope itemtype="{{ page.itemtype }}" class="post">
   <header class="post-header">
     <div class="breadcrumb">
     {% if page.parentOrganization %}
