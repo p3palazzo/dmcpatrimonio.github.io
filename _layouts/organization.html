@@ -28,11 +28,13 @@ layout: default
         <img title="{{ page.title }}" alt="Imagem representativa" src="{{ page.image }}" />
       </div>
     {% endif %}
+    <div class="page-title">
     {% if page.date %}
       <p class="date">Última atualização: {{ page.date | date: "%e %B %Y" }}</p>
     {% endif %}
 
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+    </div>
   </header>
 
   <div class="post-content">
@@ -51,7 +53,7 @@ layout: default
     <ul class="keywords" itemprop="keywords">
       <span class="keywords-title">Palavras-chave:</span>
       {% for keyword in page.keywords %}
-        <li>{{ keyword }}</li>
+        <li>{{ keyword }}{%- unless forloop.last -%}, {%- endunless -%}</li>
       {% endfor %}
     </ul>
     {% endif %}
@@ -61,7 +63,7 @@ layout: default
     {%- assign projects = site.organization | where: "parentOrganization", page.slug -%}
     {%- if projects[0] -%}
       <h2 id="projetos">Projetos de pesquisa</h2>
-      <ul class="projects">
+      <ul class="list projects">
         {%- for project in projects -%}
           <li itemscope itemtype="http://schema.org/Organization">
             <a href="{{ project.url }}">{{ project.title }}</a>
@@ -85,7 +87,7 @@ layout: default
     {%- endcapture -%}
     {%- if memberlist.size > 0 -%}
     <h2 id="integrantes">Integrantes</h2>
-    <ul class="members">
+    <ul class="list members">
       {{ memberlist }}
     </ul>
     {%- endif -%}

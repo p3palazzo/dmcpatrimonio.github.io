@@ -1,0 +1,31 @@
+div.page-image {
+	width: 25%;
+	margin-right: 1em;
+	float: left;
+}
+
+div.post-content {
+	margin-top: 2em;
+	clear: both;
+}
+
+ul.keywords,
+ul.keywords li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style: none;
+}
+
+span.keywords-title {
+	font-weight: bold;
+}
+
+ul.list {
+	list-style: none;
+	margin-left: -1em;
+}
+
+ul.list > li:before {
+	content: "– ";
+}
