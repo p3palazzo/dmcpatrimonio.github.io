@@ -10,37 +10,30 @@ layout: default
         <img title="{{ page.title }}" alt="Imagem pessoal" src="{{ page.image }}" />
       </div>
     {% endif %}
-
     {% if page.date %}
       <p class="date">Última atualização: {{ page.date | date: "%e %B %Y" }}</p>
     {% endif %}
-
     <h1 class="post-title">{{ page.title | escape }}</h1>
-
     <dl>
-    {% if page.identifier %}
-      <dd>
-        <a itemprop="identifier" content="https://orcid.org/{{ page.identifier }}" href="https://orcid.org/{{ page.identifier }}" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;">
-          <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />
-          https://orcid.org/{{ page.identifier }}
-        </a>
-      </dd>
-    {% endif %}
-    {% for link in page.sameAs %}
-      <dd>
-      <a itemprop="sameAs" content="{{ link.url }}" href="{{ link.url }}" title="{{ link.name }}">
-        {%- if link.image -%}
-        <img src="{{ link.image }}" alt="{{ link.name }} image" />
-        {%- else -%}
-        {{ link.name }}
-        {%- endif -%}
-        </a>
-      </dd>
-    {% endfor %}
-    {% if page.email %}
-    {% endif %}
-    {% if page.telephone %}
-    {% endif %}
+      {% if page.identifier %}
+        <dd>
+          <a itemprop="identifier" content="https://orcid.org/{{ page.identifier }}" href="https://orcid.org/{{ page.identifier }}" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;">
+            <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />
+            https://orcid.org/{{ page.identifier }}
+          </a>
+        </dd>
+      {% endif %}
+      {% for link in page.sameAs %}
+        <dd>
+        <a itemprop="sameAs" content="{{ link.url }}" href="{{ link.url }}" title="{{ link.name }}">
+          {%- if link.image -%}
+          <img src="{{ link.image }}" alt="{{ link.name }} image" />
+          {%- else -%}
+          {{ link.name }}
+          {%- endif -%}
+          </a>
+        </dd>
+      {% endfor %}
     </dl>
   </header>
 
