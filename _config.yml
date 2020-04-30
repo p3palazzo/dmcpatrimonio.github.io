@@ -13,6 +13,7 @@ description: >-
 baseurl: ""
 url: "https://dmcpatrimonio.github.io"
 lang: pt
+github_username: dmcpatrimonio
 
 # Conteúdo {{{1
 # ========
