@@ -17,3 +17,11 @@ affiliation:
     startDate: 2017-03-20
     endDate: 2019-03-18
 ---
+
+Arquiteta e Urbanista graduada pela Universidade Federal do Tocantins
+(2013), com formação complementar pela Universidade Técnica de Lisboa
+(2011). Pós Graduada em Reabilitação Ambiental Sustentável Arquitetônica
+e Urbanística, pela Universidade de Brasília - UNB (2015). Mestra em
+Arquitetura e Urbanismo pela Universidade de Brasília - UNB (2019).
+Professora do CEULP/ULBRA, membro do NDE. 
+
