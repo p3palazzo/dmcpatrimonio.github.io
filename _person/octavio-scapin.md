@@ -2,7 +2,10 @@
 familyName: Scapin
 givenName: Octávio
 identifier: 
-url: http://lattes.cnpq.br/3958322518141631
+sameAs:
+- name: Currículo Lattes
+  image: http://buscatextual.cnpq.br/buscatextual/images/titulo-sistema.png
+  url: http://lattes.cnpq.br/3958322518141631
 affiliation:
 - Organization: dmcpatrimonio
   Role:

@@ -2,7 +2,10 @@
 familyName     : Solórzano
 givenName      : Gabriel Ernesto Moura
 identifier     : 0000-0002-4078-7579
-url            : http://lattes.cnpq.br/045857357323086
+sameAs:
+- name: Currículo Lattes
+  image: http://buscatextual.cnpq.br/buscatextual/images/titulo-sistema.png
+  url: http://lattes.cnpq.br/045857357323086
 affiliation:
 - Organization: dmcpatrimonio
   Role:
@@ -15,3 +18,4 @@ affiliation:
     startDate: 2018-03-20
     endDate  : 2020-02-06
 ---
+

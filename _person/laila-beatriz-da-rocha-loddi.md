@@ -2,7 +2,10 @@
 familyName: Loddi
 givenName: Laila Beatriz da Rocha
 identifier: 0000-0001-5387-755X
-url: http://lattes.cnpq.br/7468794244623680
+sameAs:
+- name: Currículo Lattes
+  image: http://buscatextual.cnpq.br/buscatextual/images/titulo-sistema.png
+  url: http://lattes.cnpq.br/7468794244623680
 affiliation:
 - Organization: dmcpatrimonio
   Role:
