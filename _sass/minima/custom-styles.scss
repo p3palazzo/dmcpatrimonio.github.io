@@ -35,9 +35,13 @@ span.keywords-title {
 	font-weight: bold;
 }
 
+ul.list,
+ol.refs {
+	margin-left: 0;
+}
+
 ul.list {
 	list-style: none;
-	margin-left: 0;
 	text-indent: -1em;
 }
 
