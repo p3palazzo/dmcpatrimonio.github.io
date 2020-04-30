@@ -1,3 +1,4 @@
+<div class="team-group">
 {%- capture teams -%}
 {%- for role in site.data.roles -%}
   {%- capture memberlist -%}
@@ -14,10 +15,12 @@
     {%- endfor -%}
   {%- endcapture -%}
   {%- if memberlist.size > 0 -%}
-  <h3 class="team">{{ role }}</h3>
-  <ul class="list members">
-    {{ memberlist }}
-  </ul>
+  <div class="team-block">
+    <h3 class="team">{{ role }}</h3>
+    <ul class="list members">
+      {{ memberlist }}
+    </ul>
+  </div>
   {%- endif -%}
 {% endfor %}
 {%- endcapture -%}
@@ -25,7 +28,9 @@
   {% if page.collection %}<h2>Equipe</h2>{% endif %}
   {{ teams }}
 {% endif %}
+</div>
 
+<div class="team-group">
 {%-capture alumni -%}
   {%- for member in members -%}
     {%- assign affiliates = member.affiliation | where: "Organization", project -%}
@@ -45,5 +50,6 @@
     {{ alumni }}
   </ul>
 {% endif %}
+</div>
 
 <!-- vim: set ft=liquid shiftwidth=2 tabstop=2 expandtab foldmethod=indent : -->

@@ -32,15 +32,18 @@ collections:
   creativework:
     output   : true
     permalink: /biblio/:name
+    sort_by  : issued[0].year
   event:
     output   : true
     permalink: /:collection/:name
   organization:
     output   : true
     permalink: /grupo/:name
+    sort_by  : title
   person:
     output   : true
     permalink: /membro/:name
+    sort_by  : familyName
 
 # Defaults {{{2
 # --------

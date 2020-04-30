@@ -35,6 +35,8 @@ layout: page
 
   {% include team.html %}
 
+  {% include biblio.html %}
+
   {%- else -%}
     {{ content }}
     {%- assign groups = site.organization | where: "parentOrganization", slug -%}
