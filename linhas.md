@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: organization
 title : Linhas de pesquisa
 date  : 2020-04-28
 identifier: linhas

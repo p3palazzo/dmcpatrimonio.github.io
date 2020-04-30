@@ -37,13 +37,6 @@ layout: default
 
   <div class="post-content">
   {%- if page.collection -%}
-  {%- else -%}
-    {%- assign groups = site.organization | where: "parentOrganization", page.slug -%}
-    {%- for group in groups %}
-      {% include organization.html %}
-    {%- endfor -%}
-  {%- endif %}
-
     {%- if page.sameAs -%}
       <p class="url" itemprop="url">
         <a href="{{ page.sameAs }}">Site próprio</a>
@@ -96,6 +89,13 @@ layout: default
       {{ memberlist }}
     </ul>
     {%- endif -%}
+
+  {%- else -%}
+    {{ content }}
+    {%- assign groups = site.organization | where: "parentOrganization", page.slug -%}
+    {%- for group in groups %}
+    {%- endfor -%}
+  {%- endif %}
   </div>
 </article>
 <!-- vim: set ft=liquid shiftwidth=2 tabstop=2 expandtab foldmethod=indent : -->
