@@ -6,12 +6,18 @@ layout: default
     <div class="breadcrumb">
     {% if page.parentOrganization %}
       {%- assign parent = site.organization | where: "identifier", page.parentOrganization | first -%}
-      {%- unless parent -%}
+      {%- if parent -%}
+        {%- assign parentpath = parent.parentOrganization | append: ".md" -%}
+        {%- assign mainpage = site.pages | where: "path", parentpath | first -%}
+      {%- else -%}
         {%- assign parentpath = page.parentOrganization | append: ".md" -%}
         {%- assign parent = site.pages | where: "path", parentpath | first -%}
-      {%- endunless -%}
-    {% endif %}
-    {% if page.parentOrganization %}
+      {%- endif -%}
+      {%- if mainpage -%}
+      <span class="parentOrganization" itemscope itemtype="http://schema.org/Organization">
+        <a itemprop="url" href="{{ mainpage.url }}">{{ mainpage.title }}</a> › 
+      </span>
+      {% endif %}
       <span class="parentOrganization" itemscope itemtype="http://schema.org/Organization">
         <a itemprop="url" href="{{ parent.url }}">{{ parent.title }}</a> › 
       </span>
