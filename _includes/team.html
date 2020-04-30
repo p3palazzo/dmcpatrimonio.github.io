@@ -1,13 +1,11 @@
-{%- if page.collection -%}
-<h2>Equipe</h2>
-{% endif %}
+{%- capture teams -%}
 {%- for role in site.data.roles -%}
   {%- capture memberlist -%}
     {%- for member in members -%}
       {%- assign affiliates = member.affiliation | where: "Organization", project -%}
       {%- for affiliate in affiliates -%}
-        {%- assign teamrole = affiliate.Role | where: "endDate", nil | where: "name", role -%}
-        {%- if teamrole.size > 0 -%}
+        {%- assign teamrole = affiliate.Role | where: endDate[0], nil | where: "name", role -%}
+        {%- if teamrole.size > 0 and teamrole[0].endDate == nil -%}
         <li itemscope itemtype="http://schema.org/Person">
           <a href="{{ member.url }}">{{ member.givenName }} {{ member.additionalName }} {{ member.familyName }}</a>
         </li>
@@ -22,13 +20,18 @@
   </ul>
   {%- endif -%}
 {% endfor %}
+{%- endcapture -%}
+{%- if teams.size > 0 -%}
+  {%- if page.collection -%}<h2>Equipe</h2>{% endif %}
+  {{ teams }}
+{% endif %}
 
 {%-capture alumni -%}
   {%- for member in members -%}
     {%- assign affiliates = member.affiliation | where: "Organization", project -%}
     {%- for affiliate in affiliates -%}
-      {%- assign currentrole = affiliate.Role | where: "endDate", true -%}
-      {%- if teamrole.size > 0 -%}
+    {%- assign teamrole = affiliate.Role -%}
+    {%- if teamrole.size > 0 and teamrole[0].endDate -%}
       <li itemscope itemtype="http://schema.org/Person">
         <a href="{{ member.url }}">{{ member.givenName }} {{ member.additionalName }} {{ member.familyName }}</a>
       </li>
@@ -37,7 +40,7 @@
   {%- endfor -%}
 {%- endcapture -%}
 {%- if alumni.size > 0 -%}
-  <h3 class="team">Egressos</h3>
+  <h2 class="team">Egressos</h2>
   <ul class="list members">
     {{ alumni }}
   </ul>
