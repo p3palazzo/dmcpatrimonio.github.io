@@ -4,7 +4,9 @@ identifier: arqtrad
 image: https://avatars3.githubusercontent.com/t/3543678
 logo:
 parentOrganization: patrimonio
-sameAs: https://dmcpatrimonio.github.io/arqtrad
+sameAs:
+- name: Site do projeto
+  url: https://dmcpatrimonio.github.io/arqtrad
 keywords:
 - Arquitetura tradicional
 - Ecletismo

@@ -2,7 +2,10 @@
 familyName: Constanti
 givenName: Andressa Pinheiro
 identifier: 
-url: http://lattes.cnpq.br/3938706916241036
+sameAs:
+- name: Currículo Lattes
+  image: http://buscatextual.cnpq.br/buscatextual/images/titulo-sistema.png
+  url: http://lattes.cnpq.br/3938706916241036
 affiliation:
 - Organization: dmcpatrimonio
   Role:
