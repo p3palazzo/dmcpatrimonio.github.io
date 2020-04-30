@@ -1,0 +1,137 @@
+---
+layout: default
+---
+{%- assign slug = page.name | split: "." | first -%}
+<article itemscope itemtype="{{ page.itemtype }}" class="post">
+  <header class="post-header">
+    <div class="breadcrumb">
+    {% if page.parentOrganization %}
+      {%- assign parent = site.organization | where: "identifier", page.parentOrganization | first -%}
+      {%- if parent -%}
+        {%- assign parentpath = parent.parentOrganization | append: ".md" -%}
+        {%- assign mainpage = site.pages | where: "path", parentpath | first -%}
+      {%- else -%}
+        {%- assign parentpath = page.parentOrganization | append: ".md" -%}
+        {%- assign parent = site.pages | where: "path", parentpath | first -%}
+      {%- endif -%}
+      {%- if mainpage -%}
+      <span class="parentOrganization" itemscope itemtype="http://schema.org/Organization">
+        <a itemprop="url" href="{{ mainpage.url }}">{{ mainpage.title }}</a> › 
+      </span>
+      {% endif %}
+      <span class="parentOrganization" itemscope itemtype="http://schema.org/Organization">
+        <a itemprop="url" href="{{ parent.url }}">{{ parent.title }}</a> › 
+      </span>
+    {% endif %}
+    </div>
+    {% if page.image %}
+      <div class="page-image">
+        <img title="{{ page.title }}" alt="Imagem representativa" src="{{ page.image }}" />
+      </div>
+    {% endif %}
+    <div class="page-title">
+    {% if page.date %}
+      <p class="date">Última atualização: {{ page.date | date: "%e %B %Y" }}</p>
+    {% endif %}
+
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+    </div>
+  </header>
+
+  <div class="post-content">
+  {%- if page.collection -%}
+    {%- if page.sameAs -%}
+      <p class="url" itemprop="url">
+        <a href="{{ page.sameAs }}">Site próprio</a>
+      </p>
+    {% endif %}
+    {% if page.email %}
+    {% endif %}
+    {% if page.telephone %}
+    {% endif %}
+    <p class="description" itemprop="description">{{ page.description }} </p>
+    {% if page.keywords %}
+    <ul class="keywords" itemprop="keywords">
+      <span class="keywords-title">Palavras-chave:</span>
+      {% for keyword in page.keywords %}
+        <li>{{ keyword }}{%- unless forloop.last -%}, {%- endunless -%}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {{ content }}
+
+    {%- assign projects = site.organization | where: "parentOrganization", page.slug -%}
+    {%- if projects[0] -%}
+      <h2 id="projetos">Projetos de pesquisa</h2>
+      <ul class="list projects">
+        {%- for project in projects -%}
+          <li itemscope itemtype="http://schema.org/Organization">
+            <a href="{{ project.url }}">{{ project.title }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    {%- assign members = site.person -%}
+    {%- capture memberlist -%}
+      {%- for member in members -%}
+        {%- assign affiliates = member.affiliation | where: "Organization", page.slug -%}
+        {%- for item in affiliates -%}
+          {%- if item.Organization == page.slug -%}
+          <li itemscope itemtype="http://schema.org/Person">
+            <a href="{{ member.url }}">{{ member.givenName }} {{ member.additionalName }} {{ member.familyName }}</a>
+          </li>
+          {% endif %}
+        {%- endfor -%}
+      {%- endfor -%}
+    {%- endcapture -%}
+    {%- if memberlist.size > 0 -%}
+    <h2 id="integrantes">Integrantes</h2>
+    <ul class="list members">
+      {{ memberlist }}
+    </ul>
+    {%- endif -%}
+
+  {%- else -%}
+    {{ content }}
+    {%- assign groups = site.organization | where: "parentOrganization", slug -%}
+    {%- for group in groups %}
+    <h2 class="groups" itemscop itemtype="http://schema.org/Organization">
+      <a href="{{ group.url }}">{{ group.title }}</a>
+    </h2>
+    {% if group.startDate %}
+    <p class="date">Ativo {%- if group.endDate -%}: {% else %} desde {% endif %}
+      <date itemprop="startDate">{{ group.startDate | date: "%-d %B %Y" }}</date>
+      {% if endDate %} a
+      <date itemprop="endDate">{{ group.endDate | date: "%-d %B %Y" }}</date>
+      {%- endif -%}
+    </p>
+    {% endif %}
+    {% if group.description %}
+    <p class="description">{{ group.description }}</p>
+    {% endif %}
+    {% if group.keywords %}
+    <ul class="keywords" itemprop="keywords">
+      <span class="keywords-title">Palavras-chave:</span>
+      {% for keyword in group.keywords %}
+        <li>{{ keyword }}{%- unless forloop.last -%}, {%- endunless -%}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {%- assign projects = site.organization | where: "parentOrganization", group.identifier -%}
+    {%- if projects[0] -%}
+    <dl class="list projects">
+      <dt>Projetos de pesquisa</dt>
+      {%- for project in projects -%}
+        <dd itemscope itemtype="http://schema.org/Organization">
+          <a href="{{ project.url }}">{{ project.title }}</a>
+        </dd>
+      {%- endfor -%}
+    </dl>
+    {%- endif -%}
+    {%- endfor -%}
+  {%- endif %}
+  </div>
+</article>
+<!-- vim: set ft=liquid shiftwidth=2 tabstop=2 expandtab foldmethod=indent : -->

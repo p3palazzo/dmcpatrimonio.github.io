@@ -1,0 +1,41 @@
+---
+layout: page
+---
+{% assign team = site.person | sort: "familyName" %}
+{% assign project = site.baseurl | remove: "/" %}
+
+{{ content }}
+
+<dl class="team">
+  {% for person in team %}
+    {% for affiliation in person.affiliation %}{% if affiliation.Organization.name == project %}
+    <dt itemscope itemtype="http://schema.org/Person">
+      {{ person.givenName }} {{ person.additionalName }} {{ person.familyName }}
+    </dt>
+    <dd>
+      <a itemprop="url" href="{{ person.url }}">Curriculum Vitae</a>
+      {% if person.identifier %} | 
+      <a itemprop="identifier" href="https://orcid.org/{{ person.identifier }}">ORCID {{ person.identifier }}</a>
+      {% endif %}
+    </dd>
+    {% for affiliation in person.affiliation %}{%if affiliation.Organization.name == project %}
+    <ul itemprop="affiliation">
+      {% for role in affiliation.Organization.Role %}
+        <li>
+          <span itemscope itemtype="http://schema.org/Organization">{{ role.name }}</span>:
+          {% unless role.endDate %}desde{% endunless %}
+          <time datetime="{{ role.startDate }}" itemprop="startDate" itemtype="http://schema.org/Date">
+            {{ role.startDate | date: "%e/%m/%Y" }}
+          </time> {% if role.endDate %} a
+          <time datetime="{{ role.endDate }}" itemprop="endDate" itemtype="http://schema.org/Date">
+            {{ role.endDate | date: "%e/%m/%Y" }}{% endif %}
+          </time>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}{% endfor %}
+  {% endif %}{% endfor %}
+  {% endfor %}
+</dl>
+
+<!-- vim: set ft=liquid shiftwidth=2 tabstop=2 expandtab foldmethod=indent : -->

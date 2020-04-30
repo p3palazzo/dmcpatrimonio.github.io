@@ -1,0 +1,57 @@
+---
+layout: default
+---
+{% assign page.title = page.givenName | append: " " | append: page.additionalName | append: " " | append: page.familyName %}
+<article itemscope itemtype="http://schema.org/Person" class="person">
+
+  <header class="post-header">
+    {% if page.image %}
+      <div class="page-image">
+        <img title="{{ page.title }}" alt="Imagem pessoal" src="{{ page.image }}" />
+      </div>
+    {% endif %}
+
+    {% if page.date %}
+      <p class="date">Última atualização: {{ page.date | date: "%e %B %Y" }}</p>
+    {% endif %}
+
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+
+    {% if page.identifier %}
+    {% endif %}
+    {% if page.url %}
+    {% endif %}
+    {% if page.sameAs %}
+    {% endif %}
+    {% if page.email %}
+    {% endif %}
+    {% if page.telephone %}
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {% unless page.content %}
+    <p class="description">
+    {%- for org in page.worksFor -%}
+      {%- for role in org.Role -%}
+        {%- unless endDate -%}
+          Desde {{ role.startDate | date: "%Y" }} é {{ role.name | append: " " }} 
+        {%- endunless -%}
+      {%- endfor -%}
+      no Departamento de {{ org.department }} da {{ org.Organization }}.
+    {% endfor %}
+    {%- for org in page.worksFor -%}
+      {%- for role in org.Role -%}
+        {%- if endDate -%}
+          {{ role.name | append: " " }} ({{ role.startDate | date: "%Y" }} a {{ role.endDate | date: "%Y" }})
+          {% unless forloop.last %}, {% endunless %}
+        {%- endif -%}
+      {%- endfor -%}
+      no {{ org.department }} da {{ org.Organization }}.
+    {% endfor %}
+    </p>
+    {% endunless %}
+    {{ content }}
+  </div>
+</article>
+<!-- vim: set ft=liquid shiftwidth=2 tabstop=2 expandtab : -->
