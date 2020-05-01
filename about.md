@@ -1,8 +1,6 @@
 ---
-layout: post
+layout: page
 title:  "Histórico do grupo"
-date:   2018-08-20
-categories: grupo
 ---
 
 O Grupo de Pesquisa Documentação, Modelagem e Conservação do Patrimônio

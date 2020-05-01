@@ -1,32 +1,62 @@
 ---
 layout: default
 ---
-<article class="post">
-
-  {% if page.title %}
+{%- assign slug = page.name | split: "." | first -%}
+{%- assign members = site.person | sort: "givenName" | sort: "familyName" -%}
+{%- assign baseurl = site.baseurl | remove: "/" -%}
+{%- assign project = page.identifier | default: baseurl | default: site.github_username -%}
+<article class="post" {% if page.itemtype %} itemscope itemtype="{{ page.itemtype }}" {%- endif -%}>
   <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-    {% if page.subtitle %}
-    <p class="subtitle">{{ page.subtitle }}</p>
+    <div class="breadcrumb">
+      {% if page.parentOrganization %}
+        {%- assign parent = site.organization | where: "identifier", page.parentOrganization | first -%}
+        {%- if parent -%}
+          {%- assign parentpath = parent.parentOrganization | append: ".md" -%}
+          {%- assign mainpage = site.pages | where: "path", parentpath | first -%}
+        {%- else -%}
+          {%- assign parentpath = page.parentOrganization | append: ".md" -%}
+          {%- assign parent = site.pages | where: "path", parentpath | first -%}
+        {%- endif -%}
+        {%- if mainpage -%}
+        <span class="parentOrganization" itemscope itemtype="http://schema.org/Organization">
+          <a itemprop="url" href="{{ mainpage.url }}">{{ mainpage.title }}</a> › 
+        </span>
+        {% endif %}
+        <span class="parentOrganization" itemscope itemtype="http://schema.org/Organization">
+          <a itemprop="url" href="{{ parent.url }}">{{ parent.title }}</a> › 
+        </span>
+      {% endif %}
+    </div>
+    {% if page.image %}
+      <div class="page-image">
+        <img title="{{ page.title }}" alt="Imagem representativa" src="{{ page.image }}" />
+      </div>
     {% endif %}
+    <div class="page-title">
+    {% if page.date %}
+      <p class="date">Última atualização: {{ page.date | date: "%e %B %Y" }}</p>
+    {% endif %}
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+    </div>
+    <dl>
+      {% for link in page.sameAs %}
+        <dd>
+        <a itemprop="sameAs" content="{{ link.url }}" href="{{ link.url }}" title="{{ link.name }}">
+          {%- if link.image -%}
+          <img src="{{ link.image }}" alt="{{ link.name }} image" />
+          {%- else -%}
+          {{ link.name }}
+          {%- endif -%}
+          </a>
+        </dd>
+      {% endfor %}
+    </dl>
   </header>
-  {% endif %}
-
-  {% if page.author %}
-  <dl>
-    {% for author in page.author %}
-    <dt class="author">{{ author.name | escape }}</dt>
-    <dd class="author">{{ author.affiliation }}</dd>
-    {% endfor %}
-  </dl>
-  {% endif %}
-
-  {% if page.date %}
-  <p class="date">{{ page.date | date: "%e %B %Y" }}</p>
-  {% endif %}
-
   <div class="post-content">
     {{ content }}
-  </div>
 
+    {%- for lists in page.lists -%}
+      {% include {{ lists | append: ".html" }} %}
+    {% endfor %}
+  </div>
 </article>

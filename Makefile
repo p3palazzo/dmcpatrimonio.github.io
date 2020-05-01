@@ -16,12 +16,14 @@ SHARE = ~/dmcp/arqtrad/arqtrad
 
 # Jekyll {{{2
 # ------
+SRC           = $(wildcard *.md)
+SITE         := $(patsubst %.md,_site/%/index.html, $(DOCS))
 
-serve: build
-	bundle exec jekyll serve
+serve : $(SITE)
+	bundle exec jekyll serve 2>&1 | egrep -v 'deprecated'
 
-build: bundle
-	bundle exec jekyll build
+build : $(SRC)
+	bundle exec jekyll build 2>&1 | egrep -v 'deprecated'
 
 
 # Install and cleanup {{{1
@@ -37,7 +39,7 @@ build: bundle
 # - virtualenv: sets up a virtual environment (but you still need to activate
 #   it from the command line).
 .PHONY : install link-template makedirs submodule virtualenv clean
-install : link-template makedirs submodule lib virtualenv bundle license
+install : link-template makedirs submodule virtualenv bundle
 	# rm -rf .install
 	# The .install folder is quite small and is thus not removed even
 	# after a successful run of `make install`. This is useful should
@@ -45,34 +47,20 @@ install : link-template makedirs submodule lib virtualenv bundle license
 	# submodules (e.g. to checkout other citation styles). If that
 	# bothers you, uncomment the line above.
 
-makedirs :
-	# -mkdir -p _share && mkdir -p _book && mkdir -p fig
-	# if you prefer to keep binary files somewhere else (for
-	# example, in a synced Dropbox), uncomment the lines below.
-	ln -s $(SHARE)/_book _book
-	ln -s $(SHARE)/_share _share
-	ln -s $(SHARE)/fig fig
-	ln -s $(SHARE)/assets assets
-
 link-template :
-	# Generating a repo from a GitHub template breaks the
-	# submodules. As a workaround, we create a branch that clones
-	# directly from the template repo, activate the submodules
-	# there, then merge it into whatever branch was previously
-	# active (the master branch if your repo has just been
-	# initialized).
 	-git remote add template git@github.com:p3palazzo/research_template.git
 	git fetch template
 	git checkout -B template --track template/master
 
-lib :   .install/git/modules/lib/styles/info/sparse-checkout \
-	.install/git/modules/lib/pandoc-templates/info/sparse-checkout
+makedirs :
+	-mkdir _share
+	-mkdir _book
+	-mkdir fig
+
+submodule :
+	git submodule update --init
 	rsync -aq .install/git/ .git/
 	cd lib/styles && git config core.sparsecheckout true && \
-		git checkout master && git pull && \
-		git read-tree -m -u HEAD
-	cd lib/pandoc-templates && git config core.sparsecheckout true \
-		&& git checkout master && git pull && \
 		git read-tree -m -u HEAD
 
 submodule : link-template

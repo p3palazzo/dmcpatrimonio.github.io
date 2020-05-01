@@ -1,31 +1,104 @@
 # Geral {{{1
+# =====
 title: Documentação, Modelagem e Conservação do Patrimônio
-author: Grupo de pesquisa
-email: labeurbe@unb.br
+author:
+- name: Grupo de pesquisa
+  email: labeurbe@unb.br
 description: >-
   Grupo de pesquisa interinstitucional voltado para abordagens
   interdisciplinares na documentação, conservação e valorização do patrimônio
   cultural, com foco na arquitetura tradicional do interior continental do
   Brasil e na construção moderna. Ferramentas e metodologias de análise física,
   modelagem digital, sistemas de informação e gestão.
-baseurl: "/"
+baseurl: ""
 url: "https://dmcpatrimonio.github.io"
 lang: pt
+github_username: dmcpatrimonio
 
 # Conteúdo {{{1
-source: "/"
+# ========
 header_pages:
-  - equipe.md
-  - atual.md
+  - about.md
+  - team.md
+  - linhas.md
+  - biblio.md
+
+# Collections {{{2
+# -----------
+collections:
+  thing:
+    output   : true
+    permalink: /:collection/:name
+  creativework:
+    output   : true
+    permalink: /biblio/:name
+    sort_by  : issued[0].year
+  event:
+    output   : true
+    permalink: /:collection/:name
+  organization:
+    output   : true
+    permalink: /grupo/:name
+    sort_by  : title
+  person:
+    output   : true
+    permalink: /membro/:name
+    sort_by  : familyName
+
+# Defaults {{{2
+# --------
+defaults:
+  -
+    scope:
+      path      : ""
+      type      : "thing"
+    values:
+      layout    : "thing"
+      itemtype  : "http://schema.org/Thing"
+  -
+    scope:
+      path      : ""
+      type      : "creativework"
+    values:
+      layout    : "thing"
+      itemtype  : "http://schema.org/CreativeWork"
+      type      : "PhysicalObject"
+  -
+    scope:
+      path      : ""
+      type      : "event"
+    values:
+      layout    : "thing"
+      itemtype  : "http://schema.org/Event"
+      type      : "Event"
+  -
+    scope:
+      path      : ""
+      type      : "organization"
+    values:
+      layout    : "organization"
+      itemtype  : "http://schema.org/Organization"
+      class     : "AgentClass"
+  -
+    scope:
+      path      : ""
+      type      : "person"
+    values:
+      layout    : "person"
+      itemtype  : "http://schema.org/Person"
+      class     : "Agent"
 
 # Template {{{1
-theme: minima
+# ========
+#theme: minima
+remote_theme: p3palazzo/minima-scholar
 minima:
   date_format : "%e %B %Y"
   social_links:
     github    : https://github.com/dmcpatrimonio
 
-# Configurações diversas {{{1
+# Configurações {{{2
+# -------------
 permalink: pretty
 markdown: kramdown
 kramdown:
@@ -39,7 +112,9 @@ readme_index:
   remove_originals: true
   with_frontmatter: true
 
-plugins: # {{{1
+# Plugins {{{1
+# =======
+plugins: 
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -55,7 +130,9 @@ plugins: # {{{1
   - jekyll-titles-from-headings
   - jekyll-relative-links
 
-exclude: # {{{1
+# Exclude {{{1
+# =======
+exclude:
   - lib/
   - spec/
   - Gemfile
@@ -63,8 +140,8 @@ exclude: # {{{1
   - LICENSE
   - Makefile
   - .bundle/
-  - .sass-cache/
   - .jekyll-cache/
+  - .sass-cache/
   - gemfiles/
   - node_modules/
   - .vendor

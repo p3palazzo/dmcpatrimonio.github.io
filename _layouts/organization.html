@@ -1,0 +1,81 @@
+---
+layout: page
+---
+{%- assign slug = page.name | split: "." | first -%}
+{%- assign members = site.person | sort: "givenName" | sort: "familyName" -%}
+{%- assign baseurl = site.baseurl | remove: "/" -%}
+{%- assign project = page.identifier | default: baseurl | default: site.github_username -%}
+<article itemscope itemtype="{{ page.itemtype }}" class="post">
+
+  <div class="post-content">
+  {%- if page.collection -%}
+    <p class="description" itemprop="description">{{ page.description }} </p>
+    {% if page.keywords %}
+    <ul class="keywords" itemprop="keywords">
+      <span class="keywords-title">Palavras-chave:</span>
+      {% for keyword in page.keywords %}
+        <li>{{ keyword }}{%- unless forloop.last -%}, {%- endunless -%}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {{ content }}
+
+  {%- assign projects = site.organization | where: "parentOrganization", page.slug -%}
+  {%- if projects[0] -%}
+    <h2 id="projects">Projetos de pesquisa</h2>
+    <ul class="list projects">
+      {%- for project in projects -%}
+        <li itemscope itemtype="http://schema.org/Organization">
+          <a href="{{ project.url }}">{{ project.title }}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+  {% include team.html %}
+
+  {% include biblio.html %}
+
+  {%- else -%}
+    {{ content }}
+    {%- assign groups = site.organization | where: "parentOrganization", slug -%}
+    {%- for group in groups %}
+    <h2 class="groups" itemscop itemtype="http://schema.org/Organization">
+      <a href="{{ group.url }}">{{ group.title }}</a>
+    </h2>
+    {% if group.startDate %}
+    <p class="date">Ativo {%- if group.endDate -%}: {% else %} desde {% endif %}
+      <date itemprop="startDate">{{ group.startDate | date: "%-d %B %Y" }}</date>
+      {% if endDate %} a
+      <date itemprop="endDate">{{ group.endDate | date: "%-d %B %Y" }}</date>
+      {%- endif -%}
+    </p>
+    {% endif %}
+    {% if group.description %}
+    <p class="description">{{ group.description }}</p>
+    {% endif %}
+    {% if group.keywords %}
+    <ul class="keywords" itemprop="keywords">
+      <span class="keywords-title">Palavras-chave:</span>
+      {% for keyword in group.keywords %}
+        <li>{{ keyword }}{%- unless forloop.last -%}, {%- endunless -%}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {%- assign projects = site.organization | where: "parentOrganization", group.identifier -%}
+    {%- if projects[0] -%}
+    <dl class="list projects">
+      <dt>Projetos de pesquisa</dt>
+      {%- for project in projects -%}
+        <dd itemscope itemtype="http://schema.org/Organization">
+          <a href="{{ project.url }}">{{ project.title }}</a>
+        </dd>
+      {%- endfor -%}
+    </dl>
+    {%- endif -%}
+    {%- endfor -%}
+  {%- endif %}
+  </div>
+</article>
+<!-- vim: set ft=liquid shiftwidth=2 tabstop=2 expandtab foldmethod=indent : -->
