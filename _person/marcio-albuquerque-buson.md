@@ -4,15 +4,26 @@ givenName: Márcio Albuquerque
 identifier: 0000-0002-4221-6673
 image: http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4701762U1
 sameAs:
-- name: Currículo Lattes
-  image: http://buscatextual.cnpq.br/buscatextual/images/titulo-sistema.png
-  url: http://lattes.cnpq.br/6313415782219480
+- name: CNPq
+  url: 6313415782219480
 email: mbuson@unb.br
 affiliation:
 - Organization: dmcpatrimonio
   Role:
   - name: Pesquisador
-    startDate: 2018-02-09
+    startDate: 2018-01-09
+- Organization: ediquali-terra
+  Role:
+  - name: Coordenador
+    startdate: 2018-01-09
+- Organization: ediquali-impressao
+  Role:
+  - name: Coordenador
+    startDate: 2019
+- Organization: kraftterra
+  Role:
+  - name: Coordenador
+    startDate: 2018-01-09
 worksFor:
 - Organization: Universidade de Brasília
   department: Departamento de Tecnologia da Arquitetura e do Urbanismo
