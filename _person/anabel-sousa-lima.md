@@ -9,9 +9,6 @@ sameAs:
 affiliation:
 - Organization: dmcpatrimonio
   Role:
-  - name: Mestrado
-    startDate: 2018-02-28
-    endDate: 2019-05-31
   - name: Pesquisador
     startDate: 2019-06-01
 - Organization: arqtrad

@@ -9,7 +9,7 @@ affiliation:
 - Organization: dmcpatrimonio
   Role:
   - name: Técnico
-    startDate: 2018-02-09
+    startDate: 2018-01-09
 worksFor:
 - Organization: Universidade de Brasília
   department: Faculdade de Arquitetura e Urbanismo

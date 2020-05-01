@@ -15,7 +15,7 @@ affiliation:
 - Organization: dmcpatrimonio
   Role:
   - name: Líder
-    startDate: 2018-02-09
+    startDate: 2018-01-09
 - Organization: arqtrad
   Role:
   - name: Coordenador

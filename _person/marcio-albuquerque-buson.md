@@ -11,7 +11,19 @@ affiliation:
 - Organization: dmcpatrimonio
   Role:
   - name: Pesquisador
-    startDate: 2018-02-09
+    startDate: 2018-01-09
+- Organization: ediquali-terra
+  Role:
+  - name: Coordenador
+    startdate: 2018-01-09
+- Organization: ediquali-impressao
+  Role:
+  - name: Coordenador
+    startDate: 2019
+- Organization: kraftterra
+  Role:
+  - name: Coordenador
+    startDate: 2018-01-09
 worksFor:
 - Organization: Universidade de Brasília
   department: Departamento de Tecnologia da Arquitetura e do Urbanismo

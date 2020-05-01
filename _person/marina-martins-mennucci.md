@@ -9,7 +9,7 @@ affiliation:
 - Organization: dmcpatrimonio
   Role:
   - name: Pesquisador
-    startDate: 2018-02-09
+    startDate: 2018-01-09
 worksFor:
 - Organization: Universidade de Aveiro
   department: Centro de Investigação em Engenharia de Materiais e Cerâmica

@@ -11,7 +11,11 @@ affiliation:
 - Organization: dmcpatrimonio
   Role:
   - name: Pesquisador
-    startDate: 2018-02-09
+    startDate: 2018-01-09
+- Organization: arquiteturas-impressas
+  Role:
+  - name: Coordenador
+    startDate: 2018-01-09
 award:
 - Organization: CNPq
   Role:
