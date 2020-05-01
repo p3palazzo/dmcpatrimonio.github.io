@@ -3,9 +3,8 @@ familyName: Pimentel Lopes
 givenName: Camila de Queiroz
 identifier: 0000-0003-3446-3321
 sameAs:
-- name: Currículo Lattes
-  image: http://buscatextual.cnpq.br/buscatextual/images/titulo-sistema.png
-  url: http://lattes.cnpq.br/3613601942031627
+- name: CNPq
+  url: 3613601942031627
 affiliation:
 - Organization: dmcpatrimonio
   Role:

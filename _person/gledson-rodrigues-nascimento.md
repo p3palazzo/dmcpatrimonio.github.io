@@ -5,9 +5,8 @@ additionalName: do
 identifier: 0000-0003-2705-4925
 image: http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K8761928P2
 sameAs:
-- name: Currículo Lattes
-  image: http://buscatextual.cnpq.br/buscatextual/images/titulo-sistema.png
-  url: http://lattes.cnpq.br/7862771578861119
+- name: CNPq
+  url: 7862771578861119
 affiliation:
 - Organization: dmcpatrimonio
   Role:

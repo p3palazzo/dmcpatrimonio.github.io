@@ -3,9 +3,8 @@ familyName: Medeiros
 givenName: Ana Elisabete de Almeida
 identifier: 0000-0003-3248-4399
 sameAs:
-- name: Currículo Lattes
-  image: http://buscatextual.cnpq.br/buscatextual/images/titulo-sistema.png
-  url: http://lattes.cnpq.br/1766107518538219
+- name: CNPq
+  url: 1766107518538219
 email: ana@unb.br
 telephone: 55 61 31 07 74 49
 affiliation:

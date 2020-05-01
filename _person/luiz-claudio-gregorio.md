@@ -3,9 +3,8 @@ familyName: Gregório
 givenName: Luiz Cláudio
 image: http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K8457175D0
 sameAs:
-- name: Currículo Lattes
-  image: http://buscatextual.cnpq.br/buscatextual/images/titulo-sistema.png
-  url: http://lattes.cnpq.br/6182832712701372
+- name: CNPq
+  url: 6182832712701372
 affiliation:
 - Organization: dmcpatrimonio
   Role:

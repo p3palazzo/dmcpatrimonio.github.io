@@ -4,9 +4,8 @@ givenName: Márcio Albuquerque
 identifier: 0000-0002-4221-6673
 image: http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4701762U1
 sameAs:
-- name: Currículo Lattes
-  image: http://buscatextual.cnpq.br/buscatextual/images/titulo-sistema.png
-  url: http://lattes.cnpq.br/6313415782219480
+- name: CNPq
+  url: 6313415782219480
 email: mbuson@unb.br
 affiliation:
 - Organization: dmcpatrimonio

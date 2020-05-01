@@ -24,15 +24,27 @@ layout: default
         </dd>
       {% endif %}
       {% for link in page.sameAs %}
+        {%- if link.name == "CNPq" -%}
+        <dd>
+        <a itemprop="sameAs" content="http://lattes.cnpq.br/{{ link.url }}" href="http://lattes.cnpq.br/{{ link.url }}" title="Currículo Lattes">
+          <img src="http://memoria.cnpq.br/Portal-Lattes-Home-theme/images/logo-lattes.png" alt="Currículo Lattes" />
+          </a>
+        </dd>
+        <dd>
+        <a itemprop="sameAs" content="http://dgp.cnpq.br/dgp/espelhorh/{{ link.url }}" href="http://dgp.cnpq.br/dgp/espelhorh/{{ link.url }}" title="Diretório dos Grupos de Pesquisa">
+          <img src="http://lattes.cnpq.br/image/layout_set_logo?img_id=14055&t=1588186121214" alt="Diretório dos Grupos de Pesquisa" />
+          </a>
+        {%- else -%}
         <dd>
         <a itemprop="sameAs" content="{{ link.url }}" href="{{ link.url }}" title="{{ link.name }}">
           {%- if link.image -%}
-          <img src="{{ link.image }}" alt="{{ link.name }} image" />
+          <img src="{{ link.image }}" alt="{{ link.name }}" />
           {%- else -%}
           {{ link.name }}
           {%- endif -%}
           </a>
         </dd>
+        {%- endif -%}
       {% endfor %}
     </dl>
   </header>
