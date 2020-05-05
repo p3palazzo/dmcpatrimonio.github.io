@@ -11,7 +11,7 @@ affiliation:
   Role:
   - name: Doutorado
     startDate: 2019-03-20
-- Organization: arqtrad
+- Organization: adaptive-construction
   Role:
   - name: Doutorado
     startDate: 2019-03-20
@@ -19,8 +19,8 @@ affiliation:
 
 Possui graduação em Arquitetura e Urbanismo pela UFSC - Universidade
 Federal de Santa Catarina (2006), Mestrado em Cultura Visual pela
-Faculdade de Artes Visuais da UFG - Universidade Federal de Goiás
-(2010). Doutoranda em Arquitetura e Urbanismo pela FAU UnB -
+Faculdade de Artes Visuais da UFG - Universidade Federal de Goiás (2010).
+Doutoranda em Arquitetura e Urbanismo pela FAU UnB -
 Universidade de Brasília. Professora titular da UEG - Universidade
 Estadual de Goiás. É pesquisadora do Grupo Quiasma: Estudos e pesquisas
 interdisciplinares em arquitetura, corpo e cidade (ARQ/UFSC). Tem

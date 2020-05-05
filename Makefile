@@ -32,7 +32,7 @@ build : $(SRC)
 #   Reveal.js framework.
 # - virtualenv: sets up a virtual environment (but you still need to activate
 #   it from the command line).
-.PHONY : install link-template makedirs submodule virtualenv clean
+.PHONY : install template submodule virtualenv clean
 install : link-template makedirs submodule virtualenv bundle
 	# rm -rf .install
 	# The .install folder is quite small and is thus not removed even
@@ -41,10 +41,16 @@ install : link-template makedirs submodule virtualenv bundle
 	# submodules (e.g. to checkout other citation styles). If that
 	# bothers you, uncomment the line above.
 
-link-template :
+template :
+	# Generating a repo from a GitHub template breaks the submodules.
+	# As a workaround, we create a branch that clones directly from the
+	# template repo, activate the submodules there, then merge it into
+	# whatever branch was previously active (the master branch if your
+	# repo has just been initialized).
 	-git remote add template git@github.com:p3palazzo/research_template.git
 	git fetch template
 	git checkout -B template --track template/master
+	git checkout -
 
 makedirs :
 	-mkdir _share

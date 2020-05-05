@@ -11,7 +11,7 @@ affiliation:
   - name: Mestrado
     startDate: 2018-03-20
     endDate: 
-- Organization: arqtrad
+- Organization: doctrad
   Role:
   - name: Mestrado
     startDate: 2018-03-20

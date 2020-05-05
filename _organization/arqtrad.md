@@ -4,6 +4,7 @@ identifier: arqtrad
 image: https://avatars3.githubusercontent.com/t/3543678
 logo:
 parentOrganization: patrimonio
+startDate: 2018-06-18
 sameAs:
 - name: Site do projeto
   url: https://dmcpatrimonio.github.io/arqtrad

@@ -20,6 +20,15 @@ affiliation:
   Role:
   - name: Coordenador
     startDate: 2018-06-18
+- Organization: adaptive-construction
+  Role:
+  - name: Coordenador
+    startDate: 2020-05-05
+- Organization: doctrad
+  Role:
+  - name: Coordenador
+    startDate: 2016
+    endDate: 2020
 worksFor:
 - Organization: Universidade de Brasília
   department: Departamento de Teoria e História da Arquitetura e do Urbanismo
