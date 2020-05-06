@@ -74,8 +74,25 @@ layout: default
 
     {{ content }}
 
+    <h3>Projetos de pesquisa</h3>
+    <ul class="list affiliation">
+      {% for org in page.affiliation %}
+      {%- assign orgid = site.organization | where: "identifier", org.Organization -%}
+        {%- for group in orgid -%}
+          {%- for role in org.Role -%}
+            <li itemscope itemtype="http://schema.org/Organization">
+              <a href="{{ group.url }}" alt="{{ group.title }}">{{ group.title }}</a>
+              {% if role.endDate %}
+              (egresso)
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        {%- endfor -%}
+      {% endfor %}
+    </ul>
+
     {% include biblio.html %}
 
   </div>
 </article>
-<!-- vim: set ft=liquid shiftwidth=2 tabstop=2 expandtab : -->
+<!-- vim: set ft=liquid shiftwidth=2 tabstop=2 expandtab foldmethod=indent : -->
