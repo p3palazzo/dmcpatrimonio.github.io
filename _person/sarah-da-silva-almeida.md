@@ -11,6 +11,10 @@ affiliation:
   Role:
   - name: Mestrado
     startDate: 2019-03-20
+- Organization: arqtrad
+  Role:
+  - name: Mestrado
+    startDate: 2019-03-20
 ---
 
 Arquiteta e Urbanista formada pela Universidade de Brasília (2018).
