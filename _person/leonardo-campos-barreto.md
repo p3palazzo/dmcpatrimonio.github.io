@@ -11,7 +11,7 @@ affiliation:
   Role:
   - name: Mestrado
     startDate: 2018-01-10
-- Organization: ediquali-terra
+- Organization: ediquali-impressao
   Role:
   - name: Mestrado
     startDate: 2018-01-10

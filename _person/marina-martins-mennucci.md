@@ -10,6 +10,10 @@ affiliation:
   Role:
   - name: Pesquisador
     startDate: 2018-01-09
+- Organization: doctrad
+  Role:
+  - name: Pesquisador
+    startDate: 2018-01-09
 worksFor:
 - Organization: Universidade de Aveiro
   department: Centro de Investigação em Engenharia de Materiais e Cerâmica

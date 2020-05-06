@@ -27,8 +27,7 @@ affiliation:
 - Organization: doctrad
   Role:
   - name: Coordenador
-    startDate: 2016
-    endDate: 2020
+    startDate: 2016-09-01
 worksFor:
 - Organization: Universidade de Brasília
   department: Departamento de Teoria e História da Arquitetura e do Urbanismo
