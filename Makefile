@@ -17,7 +17,9 @@ serve : $(SITE)
 	bundle exec jekyll serve 2>&1 | egrep -v 'deprecated'
 
 build : $(SRC)
-	bundle exec jekyll build 2>&1 | egrep -v 'deprecated'
+	docker run \
+	-v "`pwd`:/srv/jekyll" -v "`pwd`/_site:/srv/jekyll/_site" \
+	jekyll/builder:3.8.5 /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
 
 
 # Install and cleanup {{{1
