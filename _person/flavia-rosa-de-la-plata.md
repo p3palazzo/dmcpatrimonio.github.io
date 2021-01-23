@@ -12,7 +12,7 @@ affiliation:
   Role:
   - name: Graduação
     startDate: 2018-01-09
-- Organization: arqtrad
+- Organization: classico-trad-ecletico
   Role:
   - name: Graduação
     startDate: 2018-01-09

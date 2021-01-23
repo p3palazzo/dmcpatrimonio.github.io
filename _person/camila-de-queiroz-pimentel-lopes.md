@@ -10,7 +10,7 @@ affiliation:
   Role:
   - name: Pesquisador
     startDate: 2019-03-19
-- Organization: arqtrad
+- Organization: classico-trad-ecletico
   Role:
   - name: Mestrado
     startDate: 2017-03-20

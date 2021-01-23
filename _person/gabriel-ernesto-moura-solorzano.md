@@ -11,7 +11,7 @@ affiliation:
   - name     : Mestrado
     startDate: 2018-03-20
     endDate  : 2020-02-06
-- Organization: arqtrad
+- Organization: classico-trad-ecletico
   Role:
   - name     : Mestrado
     startDate: 2018-03-20

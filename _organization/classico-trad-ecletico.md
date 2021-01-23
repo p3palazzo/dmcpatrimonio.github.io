@@ -1,6 +1,6 @@
 ---
 title: "Clássico, tradicional, eclético: nacionalismo e cosmopolitismo na cidade industrial"
-identifier: arqtrad
+identifier: classico-trad-ecletico
 image: https://avatars3.githubusercontent.com/t/3543678
 logo:
 parentOrganization: patrimonio

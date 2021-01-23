@@ -16,7 +16,7 @@ affiliation:
   Role:
   - name: Líder
     startDate: 2018-01-09
-- Organization: arqtrad
+- Organization: classico-trad-ecletico
   Role:
   - name: Coordenador
     startDate: 2018-06-18

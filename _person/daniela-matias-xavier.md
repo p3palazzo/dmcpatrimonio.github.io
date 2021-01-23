@@ -13,7 +13,7 @@ affiliation:
   - name: Graduação
     startDate: 2020-08-01
     endDate: 
-- Organization: arqtrad
+- Organization: classico-trad-ecletico
   Role:
   - name: Graduação
     startDate: 2020-08-01

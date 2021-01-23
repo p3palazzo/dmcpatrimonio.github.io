@@ -12,7 +12,7 @@ affiliation:
   Role:
   - name: Doutorado
     startDate: 2019-03-20
-- Organization: arqtrad
+- Organization: classico-trad-ecletico
   Role:
   - name: Doutorado
     startDate: 2019-03-20
