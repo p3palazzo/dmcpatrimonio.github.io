@@ -133,15 +133,9 @@ plugins:
 # Exclude {{{1
 # =======
 exclude:
-  - lib/
-  - spec/
   - Gemfile
-  - Gemfile.lock
   - LICENSE
   - Makefile
-  - .bundle/
-  - .jekyll-cache/
-  - .sass-cache/
   - gemfiles/
   - node_modules/
   - .vendor

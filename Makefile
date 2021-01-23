@@ -1,9 +1,9 @@
 # Global variables {{{1
 # ================
 # Where make should look for things
-VPATH = lib
-vpath %.yaml .:spec
-vpath default.% lib/pandoc-templates
+VPATH = _lib
+vpath %.yaml .:_spec
+vpath default.% _lib/pandoc-templates
 
 # Branch-specific targets and recipes {{{1
 # ===================================
@@ -62,7 +62,7 @@ makedirs :
 submodule :
 	git submodule update --init
 	rsync -aq .install/git/ .git/
-	cd lib/styles && git config core.sparsecheckout true && \
+	cd _lib/styles && git config core.sparsecheckout true && \
 		git read-tree -m -u HEAD
 
 virtualenv :
