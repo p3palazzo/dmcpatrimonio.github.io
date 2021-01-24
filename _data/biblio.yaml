@@ -1,6 +1,6 @@
 ---
 references:
-- id: 'almeida:2019luz'
+- id: almeida:2019luz
   abstract: >-
     Um meio de comunicação e uma forma de arte, o cinema é capaz de traduzir por
     meio de imagens em movimento, ideais, épocas, histórias e sentimentos.
@@ -49,22 +49,71 @@ references:
       given: Eduardo Barbosa
   container-title: Anais do 3º Simpósio Científico do ICOMOS Brasil
   event: 3º Simpósio Científico do ICOMOS Brasil
+  event-place: Belo Horizonte
   ISBN: 978-85-5722-038-6
   issued:
     - year: 2019
+  language: Portuguese
   publisher: IEDS
   publisher-place: Belo Horizonte
   source: www.even3.com.br
   title: >-
     Luz, câmera, preservação! O papel do cinema na conservação da arquitetura
     moderna
-  title-short: 'Luz, câmera, preservação!'
+  title-short: Luz, câmera, preservação!
   type: paper-conference
   URL: >-
     https://even3.com.br/anais/iiisimposioicomosbrasil/155778-luz-camera-preservacao-o-papel-do-cinema-na-conservacao-da-arquitetura-moderna
 
-- id: 'garcia:2020caixa7'
-  abstract: "Resumo\n\t\t\t\t\tConsiderando que o Conjunto Urbanístico de Brasília possui valor excepcional, como um sítio cultural e que deve ser protegido para o benefício da humanidade, a pesquisa objetiva questões sobre a importância de se preservar não somente o significado histórico, artístico e cultural implícito no desenho original de Lucio Costa, mas associar ao projeto de educação patrimonial do Distrito Federal as histórias das pré-existências da formação do DF, além das culturas que foram trazidas pelos candangos e incorporadas como saberes locais de suas 32 regiões administrativas. Desta maneira, objetiva fomentar as relações socioculturais entre essas regiões administrativas, além de buscar promover uma articulação entre a Universidade de Brasília/Faculdade de Arquitetura e Urbanismo, o IPHAN/DF/Nacional e as Secretariarias de Educação e de Cultura do Distrito Federal por meio de ensino e pesquisa, a partir de programas de colaboração técnica e de convênios. A pesquisa propõe a construção de material pedagógico que possa contribuir para a abordagem do tema “educação patrimonial” de maneira eficiente, lúdica e esclarecedora, a fim de sensibilizar as crianças nas primeiras fases de sua formação e, concomitantemente, situar a consciência de cidadania, implícita ao desenho da cidade. Além disso, permitir que os jovens adquiram as competências necessárias para promover a conservação dos bens patrimoniais e culturais e, assim, formem novas atitudes, com vistas a estabelecer um compromisso permanente ao exercício da cidadania e que inclua o entendimento da preservação da cidade para as gerações presentes e futuras, e assim desempenhem um papel decisivo na salvaguarda de suas cidades.Palavras-chave: Brasília. Cidadania. Desenho. Distrito Federal. Educação Patrimonial. Jogos educativos."
+- id: constanti:2019patrimonializacao
+  author:
+    - family: Constanti
+      given: Andressa Pinheiro
+    - family: Palazzo
+      given: Pedro P.
+  container-title: Anais
+  event: XVIII Enanpur
+  event-place: Natal
+  ISBN: 1984-8781
+  issued:
+    - year: 2019
+  language: Portuguese
+  publisher-place: Natal
+  title: >-
+    Patrimonialização das intervenções modernas em conjuntos históricos: a
+    Ladeira da Misericórdia de Lina Bo Bardi em Salvador
+  title-short: Patrimonialização das intervenções modernas em conjuntos históricos
+  type: paper-conference
+  URL: http://anpur.org.br/xviiienanpur/anaisadmin/capapdf.php?reqid=553
+
+- id: garcia:2020caixa7
+  abstract: >-
+    Considerando que o Conjunto Urbanístico de Brasília possui valor
+    excepcional, como um sítio cultural e que deve ser protegido para o
+    benefício da humanidade, a pesquisa objetiva questões sobre a importância de
+    se preservar não somente o significado histórico, artístico e cultural
+    implícito no desenho original de Lucio Costa, mas associar ao projeto de
+    educação patrimonial do Distrito Federal as histórias das pré-existências da
+    formação do DF, além das culturas que foram trazidas pelos candangos e
+    incorporadas como saberes locais de suas 32 regiões administrativas. Desta
+    maneira, objetiva fomentar as relações socioculturais entre essas regiões
+    administrativas, além de buscar promover uma articulação entre a
+    Universidade de Brasília/Faculdade de Arquitetura e Urbanismo, o
+    IPHAN/DF/Nacional e as Secretariarias de Educação e de Cultura do Distrito
+    Federal por meio de ensino e pesquisa, a partir de programas de colaboração
+    técnica e de convênios. A pesquisa propõe a construção de material
+    pedagógico que possa contribuir para a abordagem do tema “educação
+    patrimonial” de maneira eficiente, lúdica e esclarecedora, a fim de
+    sensibilizar as crianças nas primeiras fases de sua formação e,
+    concomitantemente, situar a consciência de cidadania, implícita ao desenho
+    da cidade. Além disso, permitir que os jovens adquiram as competências
+    necessárias para promover a conservação dos bens patrimoniais e culturais e,
+    assim, formem novas atitudes, com vistas a estabelecer um compromisso
+    permanente ao exercício da cidadania e que inclua o entendimento da
+    preservação da cidade para as gerações presentes e futuras, e assim
+    desempenhem um papel decisivo na salvaguarda de suas cidades.Palavras-chave:
+    Brasília. Cidadania. Desenho. Distrito Federal. Educação Patrimonial. Jogos
+    educativos.
   accessed:
     - year: 2020
       month: 4
@@ -87,7 +136,7 @@ references:
   issued:
     - year: 2020
       month: 3
-  language: pt-BR
+  language: Portuguese
   page: 100-112
   source: www.periodicos.se.df.gov.br
   title: >-
@@ -95,10 +144,24 @@ references:
     Distrito Federal
   title-short: A caixa patrimonial
   type: article-journal
-  URL: 'http://www.periodicos.se.df.gov.br/index.php/comcenso/article/view/793'
+  URL: http://www.periodicos.se.df.gov.br/index.php/comcenso/article/view/793
   volume: '7'
 
-- id: 'mennucci:2018catetinho2'
+- id: iphan:2017catetinho
+  author:
+    - family: Iphan
+      given: Instituto do Patrimônio Histórico e Artistico Nacional
+  event-place: Brasília
+  issued:
+    - year: 2017
+  language: Portuguese
+  number-of-volumes: '3'
+  publisher: Superintendência do Iphan no Distrito Federal
+  publisher-place: Brasília
+  title: Inventário do Catetinho
+  type: book
+
+- id: mennucci:2018catetinho:2
   accessed:
     - year: 2019
       month: 1
@@ -108,7 +171,7 @@ references:
       given: Marina Martins
     - family: Palazzo
       given: Pedro P.
-  container-title: 'Building knowledge, constructing histories'
+  container-title: Building knowledge, constructing histories
   editor:
     - family: Wouters
       given: Ine
@@ -124,6 +187,7 @@ references:
       dropping-particle: de
     - family: Zastavni
       given: Denis
+  event-place: Leiden
   ISBN: 978-0-429-44675-7
   issued:
     - year: 2018
@@ -137,48 +201,7 @@ references:
   type: chapter
   volume: '2'
 
-- id: 'nascimento:2019imagens13'
-  abstract: >-
-    Neste texto procuramos construir, por meio de imagens fotográficas, parte do
-    que aconteceu nas manifestações estudantis, ocorridas em 15 de maio 2019, em
-    várias cidades brasileiras, contra o corte nos recursos da educação.
-    Pensamos que esse episódio se assemelha com ocorrido no “Maio de 68”, em
-    Paris, por isso aglutinamos alguns fatos e imagens que ajudaram na sua
-    reverberação pelo Brasil, ainda em 1968. A finalidade é mostrar como a
-    posição estudantil influencia o comportamento revolucionário e transgressor
-    dos que lutam por mudanças, sempre que a intenção de favorecer a massa, com
-    sonhos revolucionários, torna-se um ideal, para promover direitos aos
-    estudantes e à sociedade. Metodologicamente, utilizaremos recursos como,
-    netnografia, etnografia virtual e os acervos digitais on-line, além das
-    contribuições de Dubois (2004). Considerando os atos de focar, enquadrar e
-    acionar o dispositivo de recorte de espaço e tempo, para mostrar como foram
-    as manifestações nas cidades de Goiânia-GO e Londrina-PR, no dia 15 de maio
-    de 2019.
-  accessed:
-    - year: 2020
-      month: 4
-      day: 24
-  author:
-    - family: Nascimento
-      given: Gledson Rodrigues
-  container-title: Domínios da Imagem
-  DOI: 10.5433/2237-9126.2019v13n25p116
-  ISSN: 2237-9126
-  issue: '25'
-  issued:
-    - year: 2019
-  language: pt
-  number: '25'
-  page: 116-140
-  source: www.uel.br
-  title: >-
-    Imagens fotográficas sobre autoritarismo e manifestações estudantis contra
-    os cortes na educação nas cidades de Goiânia e Londrina 15 maio 2019
-  type: article-journal
-  URL: 'http://www.uel.br/revistas/uel/index.php/dominiosdaimagem/article/view/39913'
-  volume: '13'
-
-- id: 'oliveira:2019avenida1'
+- id: oliveira:2019avenida1
   abstract: >-
     Esse trabalho investiga as permanências urbanas verificadas no núcleo
     inicial de Goiânia, a partir da Avenida Goiás, seu mais simbólico e
@@ -212,10 +235,11 @@ references:
   event: >-
     Arquisur: Asociación de escuelas y facultades públicas de arquitectura de
     América del Sur
+  event-place: 'Belo Horizonte : Campinas'
   ISBN: 978-65-80968-09-1
   issued:
     - year: 2019
-  language: pt-br
+  language: Portuguese
   page: '112084'
   publisher: Galoá
   publisher-place: 'Belo Horizonte : Campinas'
@@ -227,7 +251,7 @@ references:
     https://proceedings.science/arquisur-2019/papers/avenida-goias-em-goiania-go--perspectivas-da-memoria-social?lang=pt-br
   volume: '1'
 
-- id: 'oliveira:2019elementos'
+- id: oliveira:2019elementos
   abstract: >-
     Analisa-se os elementos da matriz urbana portuguesa na cidade de Goiás-GO,
     tomada como pioneiro e importante exemplar das cidades coloniais do ciclo do
@@ -264,9 +288,11 @@ references:
       dropping-particle: de
   container-title: 'Anais do 11º mestres e conselheiros: Educação para o patrimônio'
   event: 11º mestres e conselheiros
+  event-place: Belo Horizonte
   ISBN: 2176-2783
   issued:
     - year: 2019
+  language: Portuguese
   publisher: IEDS
   publisher-place: Belo Horizonte
   source: www.even3.com.br
@@ -278,7 +304,93 @@ references:
   URL: >-
     https://even3.com.br/anais/11mestreseconselheiros/167873-elementos-da-matriz-urbana-portuguesa-em-goias--vila-boa-e-suas-identidades-culturais
 
-- id: 'palazzo:2018accouplement2'
+- id: palazzo:2017cidades
+  accessed:
+    - year: 2018
+      month: 6
+      day: 11
+  author:
+    - family: Palazzo
+      given: Pedro P.
+  container-title: 'Morfologia urbana : território, paisagem e planejamento'
+  editor:
+    - family: Mendonça
+      given: Eneida Maria Souza
+    - family: Esteves Junior
+      given: Milton
+    - family: Oliveira Júnior
+      given: Edilson Cavalcante
+      dropping-particle: de
+    - family: Pegoretti
+      given: Michela Sagrillo
+  event: 6a Conferência da Rede Lusófona de Morfologia Urbana
+  event-place: Vitória
+  ISBN: 978-85-545-8007-0
+  issued:
+    - year: 2017
+  language: Portuguese
+  page: 642–651
+  publisher: UFES
+  publisher-place: Vitória
+  title: As cidades do Planalto Central, do ouro à ferrovia
+  type: paper-conference
+  URL: http://pnum2017.wixsite.com/pnum2017
+
+- id: palazzo:2017missing
+  author:
+    - family: Palazzo
+      given: Pedro P.
+    - family: Moura
+      given: Ana Amélia de Paula
+  container-title: Whose Tradition? Discourses on the Built Environment
+  editor:
+    - family: AlSayyad
+      given: Nezar
+    - family: Gillem
+      given: Mark
+    - family: Moffat
+      given: David
+  event-place: 'London : New York'
+  ISBN: 978-1-138-19207-2
+  issued:
+    - year: 2017
+      month: 6
+      day: 21
+  language: English
+  page: 168–187
+  publisher: Routledge
+  publisher-place: 'London : New York'
+  source: Amazon
+  title: >-
+    The Missing “Brazilianness” of Nineteenth-Century Brazilian Art and
+    Architecture
+  type: chapter
+
+- id: palazzo:2017patrimonializacao
+  author:
+    - family: Palazzo
+      given: Pedro P.
+  editor:
+    - family: Andrade, Junior
+      given: Nivaldo Vieira
+      dropping-particle: de
+  event: >-
+    Encontro Internacional Arquimemória 5 sobre preservação do patrimônio
+    edificado
+  event-place: Salvador
+  issued:
+    - year: 2017
+  language: Portuguese
+  page: E1 069
+  publisher: UFBA
+  publisher-place: Salvador
+  title: >-
+    Patrimonialização e exemplaridade da arquitetura religiosa: paralelos entre
+    o Renascimento e o Neocolonial no Brasil
+  title-short: Patrimonialização e exemplaridade da arquitetura religiosa
+  type: paper-conference
+
+- id: palazzo:2018accouplement:2
   accessed:
     - year: 2019
       month: 1
@@ -286,7 +398,7 @@ references:
   author:
     - family: Palazzo
       given: Pedro P.
-  container-title: 'Building knowledge, constructing histories'
+  container-title: Building knowledge, constructing histories
   editor:
     - family: Wouters
       given: Ine
@@ -302,6 +414,7 @@ references:
       dropping-particle: de
     - family: Zastavni
       given: Denis
+  event-place: Leiden
   ISBN: 978-0-429-44675-7
   issued:
     - year: 2018
@@ -315,13 +428,14 @@ references:
   type: chapter
   volume: '2'
 
-- id: 'palazzo:2018gis-assisted10'
+- id: palazzo:2018gis-assisted10
   author:
     - family: Palazzo
-      given: Pedro Paulo
+      given: Pedro P.
   container-title: Preservation Education Research
   issued:
     - year: 2018
+  language: English
   page: 47–70
   title: >-
     GIS-Assisted Identification of Historic Districts: A Conceptual Model Case
@@ -330,7 +444,7 @@ references:
   type: article-journal
   volume: '10'
 
-- id: 'palazzo:2018gis3'
+- id: palazzo:2018gis3
   accessed:
     - year: 2018
       month: 6
@@ -345,22 +459,24 @@ references:
   editor:
     - family: Amoruso
       given: Giuseppe
+  event-place: Cham
   ISBN: 978-3-319-57936-8 978-3-319-57937-5
   issued:
     - year: 2018
+  language: English
   page: 1218–1227
   publisher: Springer
   publisher-place: Cham
   source: Crossref
   title: GIS Model for Morpho-Typology in Historic Preservation and Contextual Design
   type: chapter
-  URL: 'http://link.springer.com/10.1007/978-3-319-57937-5_126'
+  URL: http://link.springer.com/10.1007/978-3-319-57937-5_126
   volume: '3'
 
-- id: 'palazzo:2018tipologia'
+- id: palazzo:2018tipologia
   author:
     - family: Palazzo
-      given: Pedro Paulo
+      given: Pedro P.
   container-title: >-
     Um projecto de futuro para a Beirã (Marvão) baseado na arquitectura e
     urbanismo de tradição alentejana = A project for the future of Beirã
@@ -369,10 +485,11 @@ references:
   editor:
     - family: Hermida
       given: Alejandro García
+  event-place: Lisboa
   ISBN: 978-989-98624-6-3
   issued:
     - year: 2018
-  language: pt en es
+  language: Portuguese
   page: 91–97
   publisher: Fundação Serra Henriques
   publisher-place: Lisboa
@@ -384,7 +501,7 @@ references:
   URL: >-
     https://www.premiorafaelmanzano.com/wp-content/uploads/2018/12/Livro_FSH_Marvao-1.pdf
 
-- id: 'palazzo:2019imagem'
+- id: palazzo:2019imagem
   author:
     - family: Palazzo
       given: Pedro P.
@@ -397,36 +514,53 @@ references:
     - year: 2019
       month: 5
       day: 14
-  language: pt-br
+  language: Portuguese
+  publisher-place: Brasília
   title: Imagem da arquitetura árabe no Brasil
   type: speech
 
-- id: 'palazzo:2020relacoes'
-  abstract: >-
-    As superquadras que caracterizam a malha urbana de Brasília são definidas
-    por Lucio Costa, a posteriori, como a “escala residencial” da cidade: um
-    jogo de palavras que obscurece o entendimento de como se estrutura o tecido
-    residencial da capital. Visando a perceber com maior clareza as relações de
-    escala — no sentido convencional, isto é, geométrico, da palavra — na
-    superquadra, abordam-se inicialmente as contradições inerentes à abstração
-    espacial e discursiva no modernismo. Em seguida, analisam-se as relações de
-    escala na área residencial de Brasília em três níveis sucessivos: as
-    articulações de escala da unidade de vizinhança, os elementos de composição
-    espacial na superquadra, e o papel dos edifícios na concretização das
-    escalas e espacialidades peculiares ao urbanismo desta cidade. A cada passo,
-    observa-se como as categorias interpretativas avançadas por diversos
-    estudiosos de Brasília e da arquitetura moderna se articulam, nos seus
-    esclarecimentos e contradições, com a abstração e ambiguidade espacial da
-    superquadra. O conjunto assim indissociável de espaços e discursos sustenta
-    o paradigma do habitar moderno, ao preço, porém, de se erigir um sistema de
-    mistificações conceituais.
+- id: palazzo:2019saberes
+  author:
+    - family: Palazzo
+      given: Pedro P.
+  event: IV Oficina Paisagens de Influência Portuguesa
+  event-place: Coimbra
+  genre: Seminário
+  issued:
+    - year: 2019
+      month: 12
+      day: 11
+  language: Portuguese
+  publisher-place: Coimbra
+  title: Saberes partilhados no urbanismo do Brasil no século XIX
+  title-short: Saberes partilhados
+  type: speech
+
+- id: palazzo:2020literary32
+  author:
+    - family: Palazzo
+      given: Pedro P.
+  container-title: Traditional Dwellings and Settlements Review
+  container-title-short: TDSR
+  issue: '1'
+  issued:
+    - year: 2020
+      season: 3
+  language: English
+  page: 25-36
+  title: Literary History and Architectural Traditionalism in Portugal and Brazil
+  type: article-journal
+  volume: '32'
+
+- id: palazzo:2020relacoes
+  abstract: "Resumo\n\t\t\t\t\tAs superquadras que caracterizam a malha urbana de Brasília são definidas por Lucio Costa, a posteriori, como a “escala residencial” da cidade: um jogo de palavras que obscurece o entendimento de como se estrutura o tecido residencial da capital. Visando a perceber com maior clareza as relações de escala — no sentido convencional, isto é, geométrico, da palavra — na superquadra, abordam-se inicialmente as contradições inerentes à abstração espacial e discursiva no modernismo. Em seguida, analisam-se as relações de escala na área residencial de Brasília em três níveis sucessivos: as articulações de escala da unidade de vizinhança, os elementos de composição espacial na superquadra, e o papel dos edifícios na concretização das escalas e espacialidades peculiares ao urbanismo desta cidade. A cada passo, observa-se como as categorias interpretativas avançadas por diversos estudiosos de Brasília e da arquitetura moderna se articulam, nos seus esclarecimentos e contradições, com a abstração e ambiguidade espacial da superquadra. O conjunto assim indissociável de espaços e discursos sustenta o paradigma do habitar moderno, ao preço, porém, de se erigir um sistema de mistificações conceituais."
   accessed:
     - year: 2020
       month: 3
       day: 17
   author:
     - family: Palazzo
-      given: Pedro Paulo
+      given: Pedro P.
     - family: Solórzano
       given: Gabriel Ernesto Moura
   container-title: 'Paranoá: cadernos de arquitetura e urbanismo'
@@ -438,16 +572,34 @@ references:
     - year: 2020
       month: 3
       day: 14
-  language: pt
+  language: Portuguese
   number: '25'
   page: 107-128
   source: periodicos.unb.br
   title: 'Relações de escala na superquadra de Brasília: paradigma ou mistificação?'
   title-short: Relações de escala na superquadra de Brasília
   type: article-journal
-  URL: 'https://periodicos.unb.br/index.php/paranoa/article/view/29209'
+  URL: https://periodicos.unb.br/index.php/paranoa/article/view/29209
 
-- id: 'pimentellopes:2017especulacao'
+- id: palazzo:2020teoria
+  author:
+    - family: Palazzo
+      given: Pedro P.
+  event: Seminário do Centro de Estudos Sociais da Universidade de Coimbra
+  event-place: Coimbra
+  genre: Conferência
+  issued:
+    - year: 2020
+      month: 9
+      day: 17
+  language: Portuguese
+  publisher-place: Coimbra
+  title: Teoria da arquitetura como género literário no século XIX
+  type: speech
+  URL: >-
+    https://saladeimprensa.ces.uc.pt/index.php?col=canalces&id=31244%23.X4A4LdBKiUk
+
+- id: pimentellopes:2017especulacao
   abstract: >-
     Anais do Simpósio Científico 2017 - ICOMOS BRASIL (978-85-5722-038-6) - A
     Especulação Imobiliária Como Tentativa De Mudança À Preservação Do
@@ -461,9 +613,11 @@ references:
       given: Camila de Queiroz
   container-title: Anais...
   event: Simpósio Científico Icomos Brasil
+  event-place: Belo Horizonte
   ISBN: 978-85-5722-038-6
   issued:
     - year: 2017
+  language: Portuguese
   publisher: Instituto Metodista Izabela Hendrix
   publisher-place: Belo Horizonte
   source: www.even3.com.br
@@ -477,7 +631,7 @@ references:
   URL: >-
     https://even3.com.br/anais/eventosicomos/59619-a-especulacao-imobiliaria-como-tentativa-de-mudanca-a-preservacao-do-patrimonio---o-caso-do-bairro-pacaembu-em-sao
 
-- id: 'pimentellopes:2018bases'
+- id: pimentellopes:2018bases
   abstract: >-
     O presente artigo elenca as bases da morfologia urbana e os estudos
     emergentes a partir das tais. A escola
@@ -517,17 +671,19 @@ references:
     - family: Moreira
       given: Bruno
   event: Portuguese Network of Urban Morphology
+  event-place: Porto
   ISBN: 978-989-8527-21-9
   issued:
     - year: 2018
+  language: Portuguese
   page: 2291-2303
   publisher: Faculdade de Arquitetura da Universidade do Porto
   publisher-place: Porto
   title: Bases conceituais da morfologia urbana
   type: paper-conference
-  URL: 'https://pnum.arq.up.pt/wp-content/uploads/docs/PNUM2018_ACTAS_v3.13.pdf'
+  URL: https://pnum.arq.up.pt/wp-content/uploads/docs/PNUM2018_ACTAS_v3.13.pdf
 
-- id: 'pimentellopes:2018natividade'
+- id: pimentellopes:2018natividade
   accessed:
     - year: 2020
       month: 3
@@ -537,9 +693,11 @@ references:
       given: Camila de Queiroz
   container-title: Anais do 5º Seminário Ibero-americano Arquitetura e Documentação
   event: 5º Seminário Ibero-americano Arquitetura e Documentação
+  event-place: Belo Horizonte
   ISBN: 2237-5619
   issued:
     - year: 2018
+  language: Portuguese
   publisher: 'UFMG : Even3'
   publisher-place: Belo Horizonte
   source: www.even3.com.br
@@ -549,16 +707,21 @@ references:
   URL: >-
     https://even3.com.br/anais/arqdoc/71115-natividade--tocantins--registros-de-sua-historia
 
-- id: 'solorzano:2019relacoes'
+- id: solorzano:2019relacoes
   author:
     - family: Solórzano
       given: Gabriel Ernesto Moura
     - family: Palazzo
       given: Pedro P.
   event: XVIII Enanpur
+  event-place: Natal
+  ISBN: 1984-8781
   issued:
     - year: 2019
+  language: Portuguese
   publisher-place: Natal
-  title: Relações de escala na superquadra de Brasília
+  title: 'Relações de escala na superquadra de Brasília: paradigma ou mistificação?'
+  title-short: Relações de escala na superquadra de Brasília
   type: paper-conference
+  URL: http://anpur.org.br/xviiienanpur/anaisadmin/capapdf.php?reqid=972
 ...

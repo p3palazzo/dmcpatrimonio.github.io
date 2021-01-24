@@ -1,38 +1,41 @@
 ---
 references:
-- id: 'constanti:2019patrimonializacao'
+- id: constanti:2019patrimonializacao
   author:
     - family: Constanti
       given: Andressa Pinheiro
     - family: Palazzo
-      given: Pedro Paulo
+      given: Pedro P.
   container-title: Anais
   event: XVIII Enanpur
+  event-place: Natal
   ISBN: 1984-8781
   issued:
     - year: 2019
+  language: Portuguese
   publisher-place: Natal
   title: >-
     Patrimonialização das intervenções modernas em conjuntos históricos: a
     Ladeira da Misericórdia de Lina Bo Bardi em Salvador
   title-short: Patrimonialização das intervenções modernas em conjuntos históricos
   type: paper-conference
-  URL: 'http://anpur.org.br/xviiienanpur/anaisadmin/capapdf.php?reqid=553'
+  URL: http://anpur.org.br/xviiienanpur/anaisadmin/capapdf.php?reqid=553
 
-- id: 'iphan:2017catetinho'
+- id: iphan:2017catetinho
   author:
     - family: Iphan
       given: Instituto do Patrimônio Histórico e Artistico Nacional
+  event-place: Brasília
   issued:
     - year: 2017
-  language: pt
+  language: Portuguese
   number-of-volumes: '3'
   publisher: Superintendência do Iphan no Distrito Federal
   publisher-place: Brasília
   title: Inventário do Catetinho
   type: book
 
-- id: 'mennucci:2018catetinho2'
+- id: mennucci:2018catetinho:2
   accessed:
     - year: 2019
       month: 1
@@ -41,8 +44,8 @@ references:
     - family: Mennucci
       given: Marina Martins
     - family: Palazzo
-      given: Pedro Paulo
-  container-title: 'Building knowledge, constructing histories'
+      given: Pedro P.
+  container-title: Building knowledge, constructing histories
   editor:
     - family: Wouters
       given: Ine
@@ -58,6 +61,7 @@ references:
       dropping-particle: de
     - family: Zastavni
       given: Denis
+  event-place: Leiden
   ISBN: 978-0-429-44675-7
   issued:
     - year: 2018
@@ -71,14 +75,14 @@ references:
   type: chapter
   volume: '2'
 
-- id: 'palazzo:2017cidades'
+- id: palazzo:2017cidades
   accessed:
     - year: 2018
       month: 6
       day: 11
   author:
     - family: Palazzo
-      given: Pedro Paulo
+      given: Pedro P.
   container-title: 'Morfologia urbana : território, paisagem e planejamento'
   editor:
     - family: Mendonça
@@ -91,23 +95,26 @@ references:
     - family: Pegoretti
       given: Michela Sagrillo
   event: 6a Conferência da Rede Lusófona de Morfologia Urbana
+  event-place: Vitória
   ISBN: 978-85-545-8007-0
   issued:
     - year: 2017
+  language: Portuguese
   page: 642–651
   publisher: UFES
   publisher-place: Vitória
-  title: 'As cidades do Planalto Central, do ouro à ferrovia'
+  title: As cidades do Planalto Central, do ouro à ferrovia
   type: paper-conference
-  URL: 'http://pnum2017.wixsite.com/pnum2017'
+  URL: http://pnum2017.wixsite.com/pnum2017
 
-- id: 'palazzo:2018gis-assisted10'
+- id: palazzo:2018gis-assisted10
   author:
     - family: Palazzo
-      given: Pedro Paulo
+      given: Pedro P.
   container-title: Preservation Education Research
   issued:
     - year: 2018
+  language: English
   page: 47–70
   title: >-
     GIS-Assisted Identification of Historic Districts: A Conceptual Model Case
@@ -116,14 +123,14 @@ references:
   type: article-journal
   volume: '10'
 
-- id: 'palazzo:2018gis3'
+- id: palazzo:2018gis3
   accessed:
     - year: 2018
       month: 6
       day: 11
   author:
     - family: Palazzo
-      given: Pedro Paulo
+      given: Pedro P.
     - family: Laterza
       given: Ana
   container-title: 'Putting Tradition into Practice: Heritage, Place and Design'
@@ -131,15 +138,17 @@ references:
   editor:
     - family: Amoruso
       given: Giuseppe
+  event-place: Cham
   ISBN: 978-3-319-57936-8 978-3-319-57937-5
   issued:
     - year: 2018
+  language: English
   page: 1218–1227
   publisher: Springer
   publisher-place: Cham
   source: Crossref
   title: GIS Model for Morpho-Typology in Historic Preservation and Contextual Design
   type: chapter
-  URL: 'http://link.springer.com/10.1007/978-3-319-57937-5_126'
+  URL: http://link.springer.com/10.1007/978-3-319-57937-5_126
   volume: '3'
 ...
