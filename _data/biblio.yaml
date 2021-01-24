@@ -65,6 +65,35 @@ references:
   URL: >-
     https://even3.com.br/anais/iiisimposioicomosbrasil/155778-luz-camera-preservacao-o-papel-do-cinema-na-conservacao-da-arquitetura-moderna
 
+- id: calix:2018pnum
+  accessed:
+    - year: 2020
+      month: 3
+      day: 5
+  edition: '3.13'
+  editor:
+    - family: Calix
+      given: Teresa
+    - family: Fernandes
+      given: Ana Silva
+    - family: Sucena
+      given: Sara
+    - family: Travasso
+      given: Nuno
+    - family: Moreira
+      given: Bruno
+  event-place: Porto
+  ISBN: 978-989-8527-21-9
+  issued:
+    - year: 2018
+  language: Portuguese
+  publisher: Faculdade de Arquitetura da Universidade do Porto
+  publisher-place: Porto
+  title: 'PNUM 2018. A Produção do Território: Formas, Processos, Desígnios'
+  title-short: PNUM 2018
+  type: book
+  URL: https://pnum.arq.up.pt/wp-content/uploads/docs/PNUM2018_ACTAS_v3.13.pdf
+
 - id: constanti:2019patrimonializacao
   author:
     - family: Constanti
@@ -200,6 +229,47 @@ references:
   title-short: Catetinho
   type: chapter
   volume: '2'
+
+- id: nascimento:2019imagens13
+  abstract: >-
+    Neste texto procuramos construir, por meio de imagens fotográficas, parte do
+    que aconteceu nas manifestações estudantis, ocorridas em 15 de maio 2019, em
+    várias cidades brasileiras, contra o corte nos recursos da educação.
+    Pensamos que esse episódio se assemelha com ocorrido no “Maio de 68”, em
+    Paris, por isso aglutinamos alguns fatos e imagens que ajudaram na sua
+    reverberação pelo Brasil, ainda em 1968. A finalidade é mostrar como a
+    posição estudantil influencia o comportamento revolucionário e transgressor
+    dos que lutam por mudanças, sempre que a intenção de favorecer a massa, com
+    sonhos revolucionários, torna-se um ideal, para promover direitos aos
+    estudantes e à sociedade. Metodologicamente, utilizaremos recursos como,
+    netnografia, etnografia virtual e os acervos digitais on-line, além das
+    contribuições de Dubois (2004). Considerando os atos de focar, enquadrar e
+    acionar o dispositivo de recorte de espaço e tempo, para mostrar como foram
+    as manifestações nas cidades de Goiânia-GO e Londrina-PR, no dia 15 de maio
+    de 2019.
+  accessed:
+    - year: 2020
+      month: 4
+      day: 24
+  author:
+    - family: Nascimento
+      given: Gledson Rodrigues
+  container-title: Domínios da Imagem
+  DOI: 10.5433/2237-9126.2019v13n25p116
+  ISSN: 2237-9126
+  issue: '25'
+  issued:
+    - year: 2019
+  language: Portuguese
+  number: '25'
+  page: 116-140
+  source: www.uel.br
+  title: >-
+    Imagens fotográficas sobre autoritarismo e manifestações estudantis contra
+    os cortes na educação nas cidades de Goiânia e Londrina 15 maio 2019
+  type: article-journal
+  URL: http://www.uel.br/revistas/uel/index.php/dominiosdaimagem/article/view/39913
+  volume: '13'
 
 - id: oliveira:2019avenida1
   abstract: >-

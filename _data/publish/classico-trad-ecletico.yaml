@@ -94,6 +94,47 @@ references:
   type: book
   URL: https://pnum.arq.up.pt/wp-content/uploads/docs/PNUM2018_ACTAS_v3.13.pdf
 
+- id: nascimento:2019imagens13
+  abstract: >-
+    Neste texto procuramos construir, por meio de imagens fotográficas, parte do
+    que aconteceu nas manifestações estudantis, ocorridas em 15 de maio 2019, em
+    várias cidades brasileiras, contra o corte nos recursos da educação.
+    Pensamos que esse episódio se assemelha com ocorrido no “Maio de 68”, em
+    Paris, por isso aglutinamos alguns fatos e imagens que ajudaram na sua
+    reverberação pelo Brasil, ainda em 1968. A finalidade é mostrar como a
+    posição estudantil influencia o comportamento revolucionário e transgressor
+    dos que lutam por mudanças, sempre que a intenção de favorecer a massa, com
+    sonhos revolucionários, torna-se um ideal, para promover direitos aos
+    estudantes e à sociedade. Metodologicamente, utilizaremos recursos como,
+    netnografia, etnografia virtual e os acervos digitais on-line, além das
+    contribuições de Dubois (2004). Considerando os atos de focar, enquadrar e
+    acionar o dispositivo de recorte de espaço e tempo, para mostrar como foram
+    as manifestações nas cidades de Goiânia-GO e Londrina-PR, no dia 15 de maio
+    de 2019.
+  accessed:
+    - year: 2020
+      month: 4
+      day: 24
+  author:
+    - family: Nascimento
+      given: Gledson Rodrigues
+  container-title: Domínios da Imagem
+  DOI: 10.5433/2237-9126.2019v13n25p116
+  ISSN: 2237-9126
+  issue: '25'
+  issued:
+    - year: 2019
+  language: Portuguese
+  number: '25'
+  page: 116-140
+  source: www.uel.br
+  title: >-
+    Imagens fotográficas sobre autoritarismo e manifestações estudantis contra
+    os cortes na educação nas cidades de Goiânia e Londrina 15 maio 2019
+  type: article-journal
+  URL: http://www.uel.br/revistas/uel/index.php/dominiosdaimagem/article/view/39913
+  volume: '13'
+
 - id: oliveira:2019avenida1
   abstract: >-
     Esse trabalho investiga as permanências urbanas verificadas no núcleo
@@ -196,6 +237,44 @@ references:
   type: paper-conference
   URL: >-
     https://even3.com.br/anais/11mestreseconselheiros/167873-elementos-da-matriz-urbana-portuguesa-em-goias--vila-boa-e-suas-identidades-culturais
+
+- id: palazzo:2018accouplement:2
+  accessed:
+    - year: 2019
+      month: 1
+      day: 21
+  author:
+    - family: Palazzo
+      given: Pedro P.
+  container-title: Building knowledge, constructing histories
+  editor:
+    - family: Wouters
+      given: Ine
+    - family: Voorde
+      given: Stephanie Van
+      dropping-particle: de
+    - family: Bertels
+      given: Inge
+    - family: Espion
+      given: Bernard
+    - family: Jonge
+      given: Krista
+      dropping-particle: de
+    - family: Zastavni
+      given: Denis
+  event-place: Leiden
+  ISBN: 978-0-429-44675-7
+  issued:
+    - year: 2018
+  language: English
+  page: 1029–1036
+  publisher: 'CRC : Balkema'
+  publisher-place: Leiden
+  source: Open WorldCat
+  title: 'Accouplement: Vicissitudes of an architectural motif in classical France'
+  title-short: Accouplement
+  type: chapter
+  volume: '2'
 
 - id: palazzo:2019imagem
   author:
