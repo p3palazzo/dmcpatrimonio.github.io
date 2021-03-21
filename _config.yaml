@@ -1,9 +1,8 @@
 # Geral {{{1
 # =====
 title: Documentação, Modelagem e Conservação do Patrimônio
-author:
-- name: Grupo de pesquisa
-  email: labeurbe@unb.br
+author: Grupo de pesquisa
+email: labeurbe@unb.br
 description: >-
   Grupo de pesquisa interinstitucional voltado para abordagens
   interdisciplinares na documentação, conservação e valorização do patrimônio
@@ -30,7 +29,7 @@ collections:
     output   : true
     permalink: /:collection/:name
   creativework:
-    output   : true
+    output   : false
     permalink: /biblio/:name
     sort_by  : issued[0].year
   event:
@@ -39,9 +38,10 @@ collections:
   grant:
     output   : false
     permalink: /:collection/:name
+    sort_by  : amount.validFrom
   organization:
     output   : true
-    permalink: /grupo/:name
+    permalink: /linha/:name
     sort_by  : title
   person:
     output   : true
@@ -49,7 +49,7 @@ collections:
     sort_by  : familyName
   project:
     output   : true
-    permalink: /grupo/:name
+    permalink: /projeto/:name
     sort_by  : title
 
 # Defaults {{{2
@@ -145,7 +145,6 @@ plugins:
   - jekyll-coffeescript
   - jekyll-default-layout
   - jekyll-gist
-  - jekyll-github-metadata
   - jekyll-optional-front-matter
   - jekyll-paginate
   - jekyll-readme-index
@@ -155,12 +154,14 @@ plugins:
 # Exclude {{{1
 # =======
 exclude:
-  - _csl/
   - Gemfile
   - LICENSE
   - Makefile
   - gemfiles/
   - node_modules/
   - .vendor/
+keep_files:
+  - .git/
+  - .github/
 
 # vim: set foldmethod=marker :

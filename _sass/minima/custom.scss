@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 dt {
 	font-weight: bold;
 	margin-top: 1em;
@@ -47,4 +49,8 @@ ul.list {
 
 ul.list > li:before {
 	content: "– ";
+}
+
+span.keywords-title {
+	font-weight: bold;
 }

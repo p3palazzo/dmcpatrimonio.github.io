@@ -22,6 +22,7 @@ build : $(ANYTHING) | _csl
 serve :
 	docker run --rm -it -v "`pwd`:/srv/jekyll" \
 		-v "`pwd`/.vendor/bundle:/usr/local/bundle" \
+		-p 4000:4000 -h 0.0.0.0:127.0.0.1 \
 		$(JEKYLL) jekyll serve --incremental
 
 # Install and cleanup {{{1

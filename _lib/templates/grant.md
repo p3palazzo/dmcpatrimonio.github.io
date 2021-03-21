@@ -1,14 +1,15 @@
 ---
-title:
-identifier:
+title         :
+identifier    :
 amount:
-  currency: BRL
-  value:
-  validFrom:
+  currency    : BRL
+  value       :
+  validFrom   :
   validThrough:
-funder:
-image:
-keywords:
-logo:
+fundedItem    :
+funder        :
+image         :
+logo          :
+keywords      :
 description: >-
 ---

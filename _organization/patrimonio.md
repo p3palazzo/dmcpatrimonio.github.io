@@ -1,10 +1,14 @@
 ---
 title: "Preservação e historiografia do patrimônio edificado"
 identifier: patrimonio
+department:
+- arquiteturas-impressas
+- classico-trad-ecletico
+- conserva-moderno
 image:
 logo:
-sameAs:
 parentOrganization: linhas
+sameAs:
 keywords:
 - Teoria e história da arquitetura
 - Patrimônio, cultura e identidade
