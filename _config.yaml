@@ -36,6 +36,9 @@ collections:
   event:
     output   : true
     permalink: /:collection/:name
+  grant:
+    output   : false
+    permalink: /:collection/:name
   organization:
     output   : true
     permalink: /grupo/:name
@@ -44,6 +47,10 @@ collections:
     output   : true
     permalink: /membro/:name
     sort_by  : familyName
+  project:
+    output   : true
+    permalink: /grupo/:name
+    sort_by  : title
 
 # Defaults {{{2
 # --------
@@ -74,6 +81,14 @@ defaults:
   -
     scope:
       path      : ""
+      type      : "grant"
+    values:
+      layout    : "thing"
+      itemtype  : "http://schema.org/MonetaryGrant"
+      type      : "Event"
+  -
+    scope:
+      path      : ""
       type      : "organization"
     values:
       layout    : "organization"
@@ -87,11 +102,18 @@ defaults:
       layout    : "person"
       itemtype  : "http://schema.org/Person"
       class     : "Agent"
+  -
+    scope:
+      path      : ""
+      type      : "project"
+    values:
+      layout    : "organization"
+      itemtype  : "http://schema.org/ResearchProject"
+      class     : "AgentClass"
 
 # Template {{{1
 # ========
-#theme: minima
-remote_theme: p3palazzo/minima-scholar
+theme: minima
 minima:
   date_format : "%e %B %Y"
   social_links:
@@ -133,11 +155,12 @@ plugins:
 # Exclude {{{1
 # =======
 exclude:
+  - _csl/
   - Gemfile
   - LICENSE
   - Makefile
   - gemfiles/
   - node_modules/
-  - .vendor
+  - .vendor/
 
 # vim: set foldmethod=marker :
