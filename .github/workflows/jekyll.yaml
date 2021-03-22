@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the site using the Makefile
-      run: cd ${{ github.workspace }} && make
+      run: cd ${{ github.workspace }} && chmod 777 . && make
     - uses: actions/upload-artifact@v2
       with:
         name: site
