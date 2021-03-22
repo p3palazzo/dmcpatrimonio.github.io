@@ -1,12 +1,17 @@
 ---
 title: 
 identifier: 
-department:
 dissolutionDate:
 foundingDate: 
+grant:
+- identifier:
+  amount:
+    currency:
+    value:
+  description:
+  funder:
 image: 
 logo:
-parentOrganization: 
 sameAs:
 - name: Website
   url: 

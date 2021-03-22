@@ -17,6 +17,7 @@ _share
 fig
 
 # Jekyll {{{1
+_csl/
 _site/
 Gemfile.lock
 .sass-cache/

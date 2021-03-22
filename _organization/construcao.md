@@ -1,15 +1,16 @@
 ---
 title: "Construção: modelos, técnicas e tradições"
 identifier: construcao
+department:
+- doctrad
+- ediquali-impressao
+- ediquali-terra
+- adaptive-construction
+- kraftterra
 image:
 logo:
 parentOrganization: linhas
 sameAs:
-keywords:
-- Arquitetura em terra
-- Concreto armado
-- História da construção
-- Ensaios não destrutivos
 description: >-
   Procedimentos de levantamento, ensaio, intervenção e replicação em
   componentes construtivos em terra e concreto, sistemas a estes
@@ -17,4 +18,9 @@ description: >-
   construtivos tradicionais. Metodologias e ferramentas digitais para
   identificação, documentação, interpretação e gestão do patrimônio
   cultural.
+keywords:
+- Arquitetura em terra
+- Concreto armado
+- História da construção
+- Ensaios não destrutivos
 ---

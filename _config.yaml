@@ -1,9 +1,8 @@
 # Geral {{{1
 # =====
 title: Documentação, Modelagem e Conservação do Patrimônio
-author:
-- name: Grupo de pesquisa
-  email: labeurbe@unb.br
+author: Grupo de pesquisa
+email: labeurbe@unb.br
 description: >-
   Grupo de pesquisa interinstitucional voltado para abordagens
   interdisciplinares na documentação, conservação e valorização do patrimônio
@@ -30,20 +29,28 @@ collections:
     output   : true
     permalink: /:collection/:name
   creativework:
-    output   : true
+    output   : false
     permalink: /biblio/:name
     sort_by  : issued[0].year
   event:
     output   : true
     permalink: /:collection/:name
+  grant:
+    output   : false
+    permalink: /:collection/:name
+    sort_by  : amount.validFrom
   organization:
     output   : true
-    permalink: /grupo/:name
+    permalink: /linha/:name
     sort_by  : title
   person:
     output   : true
     permalink: /membro/:name
     sort_by  : familyName
+  project:
+    output   : true
+    permalink: /projeto/:name
+    sort_by  : title
 
 # Defaults {{{2
 # --------
@@ -74,6 +81,14 @@ defaults:
   -
     scope:
       path      : ""
+      type      : "grant"
+    values:
+      layout    : "thing"
+      itemtype  : "http://schema.org/MonetaryGrant"
+      type      : "Event"
+  -
+    scope:
+      path      : ""
       type      : "organization"
     values:
       layout    : "organization"
@@ -87,11 +102,18 @@ defaults:
       layout    : "person"
       itemtype  : "http://schema.org/Person"
       class     : "Agent"
+  -
+    scope:
+      path      : ""
+      type      : "project"
+    values:
+      layout    : "organization"
+      itemtype  : "http://schema.org/ResearchProject"
+      class     : "AgentClass"
 
 # Template {{{1
 # ========
-#theme: minima
-remote_theme: p3palazzo/minima-scholar
+theme: minima
 minima:
   date_format : "%e %B %Y"
   social_links:
@@ -123,7 +145,6 @@ plugins:
   - jekyll-coffeescript
   - jekyll-default-layout
   - jekyll-gist
-  - jekyll-github-metadata
   - jekyll-optional-front-matter
   - jekyll-paginate
   - jekyll-readme-index
@@ -138,6 +159,9 @@ exclude:
   - Makefile
   - gemfiles/
   - node_modules/
-  - .vendor
+  - .vendor/
+keep_files:
+  - .git/
+  - .github/
 
 # vim: set foldmethod=marker :
