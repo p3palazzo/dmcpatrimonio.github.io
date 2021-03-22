@@ -3,7 +3,7 @@ layout: home
 title : Documentação, Modelagem e Conservação
 ---
 
-![](https://github.com/dmcpatrimonio/arqtrad/workflows/Jekyll%20site%20CI/badge.svg?branch=master)
+![Verifica estado do site](https://github.com/dmcpatrimonio/arqtrad/workflows/Website/badge.svg?branch=master)
 
 O Grupo de Pesquisa Documentação, Modelagem e Conservação do Patrimônio
 nasce da demanda por um locus institucional, na capital federal, para
