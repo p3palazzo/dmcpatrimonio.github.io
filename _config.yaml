@@ -122,10 +122,11 @@ minima:
 # Configurações {{{2
 # -------------
 permalink: pretty
-markdown: kramdown
-kramdown:
-  auto_ids: true
-  transliterated_header_ids: true
+markdown: Pandoc
+pandoc:
+  extensions:
+    - defaults: "_spec/defaults.yaml"
+    - section-divs
 relative_links:
   enabled: true
   collections: true
@@ -140,7 +141,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - kramdown
+  - jekyll-pandoc
     # The following plugins are always used by GH-Pages
   - jekyll-coffeescript
   - jekyll-default-layout
