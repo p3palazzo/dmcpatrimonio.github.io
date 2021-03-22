@@ -65,34 +65,75 @@ references:
   URL: >-
     https://even3.com.br/anais/iiisimposioicomosbrasil/155778-luz-camera-preservacao-o-papel-do-cinema-na-conservacao-da-arquitetura-moderna
 
-- id: calix:2018pnum
+- id: almeida:2021papel
+  author:
+    - family: Almeida
+      given: Sarah da Silva
+  event-place: Brasília
+  genre: Dissertação (Mestrado em Arquitetura e Urbanismo)
+  issued:
+    - year: 2021
+  language: Portuguese
+  publisher: Universidade de Brasília, Faculdade de Arquitetura e Urbanismo
+  publisher-place: Brasília
+  title: >-
+    O papel da arquitetura na narrativa cinematográfica: um estudo sobre os
+    filmes de Hayao Miyazaki
+  title-short: Um estudo sobre os filmes de Hayao Miyazaki
+  type: thesis
+
+- id: bercott:2019historia
+  author:
+    - family: Berçott
+      given: Angelina Nardelli Quaglia
+  event-place: Brasília
+  genre: Dissertação (Mestrado em Arquitetura e Urbanismo)
+  issued:
+    - year: 2019
+  language: Portuguese
+  publisher: Universidade de Brasília, Faculdade de Arquitetura e Urbanismo
+  publisher-place: Brasília
+  title: História urbanística do lago Paranoá
+  type: thesis
+
+- id: ficher:2019mello
   accessed:
     - year: 2020
-      month: 3
-      day: 5
-  edition: '3.13'
-  editor:
-    - family: Calix
-      given: Teresa
-    - family: Fernandes
-      given: Ana Silva
-    - family: Sucena
-      given: Sara
-    - family: Travasso
-      given: Nuno
-    - family: Moreira
-      given: Bruno
-  event-place: Porto
-  ISBN: 978-989-8527-21-9
+      month: 4
+      day: 21
+  author:
+    - family: Ficher
+      given: Sylvia
+    - family: Palazzo
+      given: Pedro P.
+  container-title: Oxford Art Online
+  DOI: 10.1093/gao/9781884446054.article.T056690
+  event-place: Oxford
+  ISBN: 978-1-884446-05-4
+  issued:
+    - year: 2019
+  language: English
+  publisher: Oxford University Press
+  publisher-place: Oxford
+  source: DOI.org (Crossref)
+  title: Mello, Heitor de
+  type: chapter
+  URL: >-
+    http://www.oxfordartonline.com/groveart/documentID/oao-9781884446054-e-7000056690
+
+- id: lima:2018narrativas
+  author:
+    - family: Lima
+      given: Anabel Sousa
+  event-place: Brasília
+  genre: Dissertação (Mestrado em Arquitetura e Urbanismo)
   issued:
     - year: 2018
   language: Portuguese
-  publisher: Faculdade de Arquitetura da Universidade do Porto
-  publisher-place: Porto
-  title: 'PNUM 2018. A Produção do Território: Formas, Processos, Desígnios'
-  title-short: PNUM 2018
-  type: book
-  URL: https://pnum.arq.up.pt/wp-content/uploads/docs/PNUM2018_ACTAS_v3.13.pdf
+  publisher: Universidade de Brasília, Faculdade de Arquitetura e Urbanismo
+  publisher-place: Brasília
+  title: Narrativas do urbano nas Cidades Invisíveis de Italo Calvino
+  type: thesis
 
 - id: nascimento:2019imagens13
   abstract: >-
@@ -238,7 +279,37 @@ references:
   URL: >-
     https://even3.com.br/anais/11mestreseconselheiros/167873-elementos-da-matriz-urbana-portuguesa-em-goias--vila-boa-e-suas-identidades-culturais
 
-- id: palazzo:2018accouplement:2
+- id: palazzo:2017missing
+  author:
+    - family: Palazzo
+      given: Pedro P.
+    - family: Moura
+      given: Ana Amélia de Paula
+  container-title: Whose Tradition? Discourses on the Built Environment
+  editor:
+    - family: AlSayyad
+      given: Nezar
+    - family: Gillem
+      given: Mark
+    - family: Moffat
+      given: David
+  event-place: 'London : New York'
+  ISBN: 978-1-138-19207-2
+  issued:
+    - year: 2017
+      month: 6
+      day: 21
+  language: English
+  page: 168–187
+  publisher: Routledge
+  publisher-place: 'London : New York'
+  source: Amazon
+  title: >-
+    The Missing “Brazilianness” of Nineteenth-Century Brazilian Art and
+    Architecture
+  type: chapter
+
+- id: palazzo:2018accouplement2
   accessed:
     - year: 2019
       month: 1
@@ -271,10 +342,38 @@ references:
   publisher: 'CRC : Balkema'
   publisher-place: Leiden
   source: Open WorldCat
-  title: 'Accouplement: Vicissitudes of an architectural motif in classical France'
+  title: '*Accouplement:* Vicissitudes of an architectural motif in classical France'
   title-short: Accouplement
   type: chapter
   volume: '2'
+
+- id: palazzo:2018tipologia
+  author:
+    - family: Palazzo
+      given: Pedro P.
+  container-title: >-
+    Um projecto de futuro para a Beirã (Marvão) baseado na arquitectura e
+    urbanismo de tradição alentejana = A project for the future of Beirã
+    (Marvão) based on the traditional architecture and urbanism of the Alentejo
+    region
+  editor:
+    - family: Hermida
+      given: Alejandro García
+  event-place: Lisboa
+  ISBN: 978-989-98624-6-3
+  issued:
+    - year: 2018
+  language: Portuguese
+  page: 91–97
+  publisher: Fundação Serra Henriques
+  publisher-place: Lisboa
+  title: >-
+    Tipologia da edificação na arquitectura vernácula da Beirã = Building
+    typology in the vernacular architecture of Beirã
+  title-short: Tipologia da edificação
+  type: chapter
+  URL: >-
+    https://www.premiorafaelmanzano.com/wp-content/uploads/2018/12/Livro_FSH_Marvao-1.pdf
 
 - id: palazzo:2019imagem
   author:
@@ -294,6 +393,23 @@ references:
   title: Imagem da arquitetura árabe no Brasil
   type: speech
 
+- id: palazzo:2019saberes
+  author:
+    - family: Palazzo
+      given: Pedro P.
+  event: IV Oficina Paisagens de Influência Portuguesa
+  event-place: Coimbra
+  genre: Seminário
+  issued:
+    - year: 2019
+      month: 12
+      day: 11
+  language: Portuguese
+  publisher-place: Coimbra
+  title: Saberes partilhados no urbanismo do Brasil no século XIX
+  title-short: Saberes partilhados
+  type: speech
+
 - id: palazzo:2020literary32
   author:
     - family: Palazzo
@@ -309,6 +425,35 @@ references:
   title: Literary History and Architectural Traditionalism in Portugal and Brazil
   type: article-journal
   volume: '32'
+
+- id: palazzo:2020relacoes
+  abstract: "Resumo\n\t\t\t\t\tAs superquadras que caracterizam a malha urbana de Brasília são definidas por Lucio Costa, a posteriori, como a “escala residencial” da cidade: um jogo de palavras que obscurece o entendimento de como se estrutura o tecido residencial da capital. Visando a perceber com maior clareza as relações de escala — no sentido convencional, isto é, geométrico, da palavra — na superquadra, abordam-se inicialmente as contradições inerentes à abstração espacial e discursiva no modernismo. Em seguida, analisam-se as relações de escala na área residencial de Brasília em três níveis sucessivos: as articulações de escala da unidade de vizinhança, os elementos de composição espacial na superquadra, e o papel dos edifícios na concretização das escalas e espacialidades peculiares ao urbanismo desta cidade. A cada passo, observa-se como as categorias interpretativas avançadas por diversos estudiosos de Brasília e da arquitetura moderna se articulam, nos seus esclarecimentos e contradições, com a abstração e ambiguidade espacial da superquadra. O conjunto assim indissociável de espaços e discursos sustenta o paradigma do habitar moderno, ao preço, porém, de se erigir um sistema de mistificações conceituais."
+  accessed:
+    - year: 2020
+      month: 3
+      day: 17
+  author:
+    - family: Palazzo
+      given: Pedro P.
+    - family: Solórzano
+      given: Gabriel Ernesto Moura
+  container-title: 'Paranoá: cadernos de arquitetura e urbanismo'
+  container-title-short: Paranoá
+  DOI: 10.18830/issn.1679-0944.n25.2020.8
+  ISSN: 1679-0944
+  issue: '25'
+  issued:
+    - year: 2020
+      month: 3
+      day: 14
+  language: Portuguese
+  number: '25'
+  page: 107-128
+  source: periodicos.unb.br
+  title: 'Relações de escala na superquadra de Brasília: paradigma ou mistificação?'
+  title-short: Relações de escala na superquadra de Brasília
+  type: article-journal
+  URL: https://periodicos.unb.br/index.php/paranoa/article/view/29209
 
 - id: palazzo:2020teoria
   author:
@@ -327,6 +472,23 @@ references:
   type: speech
   URL: >-
     https://saladeimprensa.ces.uc.pt/index.php?col=canalces&id=31244%23.X4A4LdBKiUk
+
+- id: pereira:2020arquitetura
+  author:
+    - family: Pereira
+      given: Octávio Scapin Costa
+  event-place: Brasília
+  genre: Dissertação (Mestrado em Arquitetura e Urbanismo)
+  issued:
+    - year: 2020
+  language: Portuguese
+  publisher: Universidade de Brasília, Faculdade de Arquitetura e Urbanismo
+  publisher-place: Brasília
+  title: >-
+    Arquitetura e Psicanálise: Atravessamentos teóricos a partir da década de
+    1960
+  title-short: Arquitetura e psicanálise
+  type: thesis
 
 - id: pimentellopes:2017especulacao
   abstract: >-
@@ -435,4 +597,37 @@ references:
   type: paper-conference
   URL: >-
     https://even3.com.br/anais/arqdoc/71115-natividade--tocantins--registros-de-sua-historia
+
+- id: solorzano:2019relacoes
+  author:
+    - family: Solórzano
+      given: Gabriel Ernesto Moura
+    - family: Palazzo
+      given: Pedro P.
+  event: XVIII Enanpur
+  event-place: Natal
+  ISBN: 1984-8781
+  issued:
+    - year: 2019
+  language: Portuguese
+  publisher-place: Natal
+  title: 'Relações de escala na superquadra de Brasília: paradigma ou mistificação?'
+  title-short: Relações de escala na superquadra de Brasília
+  type: paper-conference
+  URL: http://anpur.org.br/xviiienanpur/anaisadmin/capapdf.php?reqid=972
+
+- id: solorzano:2020superquadra
+  author:
+    - family: Solórzano
+      given: Gabriel Ernesto Moura
+  event-place: Brasília
+  genre: Dissertação (Mestrado em Arquitetura e Urbanismo)
+  issued:
+    - year: 2020
+  language: Portuguese
+  publisher: Universidade de Brasília, Faculdade de Arquitetura e Urbanismo
+  publisher-place: Brasília
+  title: 'Superquadra de Brasília: projeto, arranjo, percepção'
+  title-short: Superquadra de Brasília
+  type: thesis
 ...

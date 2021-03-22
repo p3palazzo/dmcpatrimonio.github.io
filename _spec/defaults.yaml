@@ -1,5 +1,5 @@
-fail-if-warnings        : False
-file-scope              : True
+fail-if-warnings: False
+file-scope      : True
 filters:
 - pandoc-crossref
 - citeproc
@@ -7,6 +7,6 @@ metadata:
   cssLabelSep   : "&ndash;"
   figureTitle   : Figura
   lang          : pt-BR
-  layout        : page
+  suppress-bibliography: true
   tableTitle    : Tabela
 shift-heading-level-by: 1

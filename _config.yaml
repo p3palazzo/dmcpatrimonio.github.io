@@ -125,6 +125,8 @@ permalink: pretty
 markdown: Pandoc
 pandoc:
   extensions:
+    - bibliography: "_data/biblio.yaml"
+    - csl: "_lib/chicago-cv.csl"
     - defaults: "_spec/defaults.yaml"
     - section-divs
 relative_links:
@@ -158,7 +160,6 @@ exclude:
   - Gemfile
   - LICENSE
   - Makefile
-  - chicago-cv.csl
   - gemfiles/
   - node_modules/
   - .vendor/

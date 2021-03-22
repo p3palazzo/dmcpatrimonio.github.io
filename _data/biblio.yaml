@@ -65,34 +65,36 @@ references:
   URL: >-
     https://even3.com.br/anais/iiisimposioicomosbrasil/155778-luz-camera-preservacao-o-papel-do-cinema-na-conservacao-da-arquitetura-moderna
 
-- id: calix:2018pnum
-  accessed:
-    - year: 2020
-      month: 3
-      day: 5
-  edition: '3.13'
-  editor:
-    - family: Calix
-      given: Teresa
-    - family: Fernandes
-      given: Ana Silva
-    - family: Sucena
-      given: Sara
-    - family: Travasso
-      given: Nuno
-    - family: Moreira
-      given: Bruno
-  event-place: Porto
-  ISBN: 978-989-8527-21-9
+- id: almeida:2021papel
+  author:
+    - family: Almeida
+      given: Sarah da Silva
+  event-place: Brasília
+  genre: Dissertação (Mestrado em Arquitetura e Urbanismo)
   issued:
-    - year: 2018
+    - year: 2021
   language: Portuguese
-  publisher: Faculdade de Arquitetura da Universidade do Porto
-  publisher-place: Porto
-  title: 'PNUM 2018. A Produção do Território: Formas, Processos, Desígnios'
-  title-short: PNUM 2018
-  type: book
-  URL: https://pnum.arq.up.pt/wp-content/uploads/docs/PNUM2018_ACTAS_v3.13.pdf
+  publisher: Universidade de Brasília, Faculdade de Arquitetura e Urbanismo
+  publisher-place: Brasília
+  title: >-
+    O papel da arquitetura na narrativa cinematográfica: um estudo sobre os
+    filmes de Hayao Miyazaki
+  title-short: Um estudo sobre os filmes de Hayao Miyazaki
+  type: thesis
+
+- id: bercott:2019historia
+  author:
+    - family: Berçott
+      given: Angelina Nardelli Quaglia
+  event-place: Brasília
+  genre: Dissertação (Mestrado em Arquitetura e Urbanismo)
+  issued:
+    - year: 2019
+  language: Portuguese
+  publisher: Universidade de Brasília, Faculdade de Arquitetura e Urbanismo
+  publisher-place: Brasília
+  title: História urbanística do lago Paranoá
+  type: thesis
 
 - id: constanti:2019patrimonializacao
   author:
@@ -114,6 +116,66 @@ references:
   title-short: Patrimonialização das intervenções modernas em conjuntos históricos
   type: paper-conference
   URL: http://anpur.org.br/xviiienanpur/anaisadmin/capapdf.php?reqid=553
+
+- id: constanti:2020preservacao
+  author:
+    - family: Constanti
+      given: Andressa Pinheiro
+  event-place: Brasília
+  genre: Dissertação (Mestrado em Arquitetura e Urbanismo)
+  issued:
+    - year: 2020
+  language: Portuguese
+  publisher: Universidade de Brasília, Faculdade de Arquitetura e Urbanismo
+  publisher-place: Brasília
+  title: >-
+    Preservação e inserção da arquitetura moderna em sítios do patrimônio
+    cultural: A ladeira da misericórdia de Lina Bo Bardi em Salvador
+  title-short: A ladeira da misericórdia de Lina Bo Bardi em Salvador
+  type: thesis
+
+- id: farias:2022politicas
+  author:
+    - family: Farias
+      given: Sylvio Carneiro
+      dropping-particle: de
+  event-place: Brasília
+  genre: Tese (Doutorado em Arquitetura e Urbanismo)
+  issued:
+    - year: 2022
+  language: Portuguese
+  publisher: Universidade de Brasília, Faculdade de Arquitetura e Urbanismo
+  publisher-place: Brasília
+  title: >-
+    Políticas públicas de preservação cultural: o caso do centro histórico de
+    Santos
+  title-short: O centro histórico de Santos
+  type: thesis
+
+- id: ficher:2019mello
+  accessed:
+    - year: 2020
+      month: 4
+      day: 21
+  author:
+    - family: Ficher
+      given: Sylvia
+    - family: Palazzo
+      given: Pedro P.
+  container-title: Oxford Art Online
+  DOI: 10.1093/gao/9781884446054.article.T056690
+  event-place: Oxford
+  ISBN: 978-1-884446-05-4
+  issued:
+    - year: 2019
+  language: English
+  publisher: Oxford University Press
+  publisher-place: Oxford
+  source: DOI.org (Crossref)
+  title: Mello, Heitor de
+  type: chapter
+  URL: >-
+    http://www.oxfordartonline.com/groveart/documentID/oao-9781884446054-e-7000056690
 
 - id: garcia:2020caixa7
   abstract: >-
@@ -178,8 +240,7 @@ references:
 
 - id: iphan:2017catetinho
   author:
-    - family: Iphan
-      given: Instituto do Patrimônio Histórico e Artistico Nacional
+    - literal: Instituto do Patrimônio Histórico e Artistico Nacional
   event-place: Brasília
   issued:
     - year: 2017
@@ -190,7 +251,21 @@ references:
   title: Inventário do Catetinho
   type: book
 
-- id: mennucci:2018catetinho:2
+- id: lima:2018narrativas
+  author:
+    - family: Lima
+      given: Anabel Sousa
+  event-place: Brasília
+  genre: Dissertação (Mestrado em Arquitetura e Urbanismo)
+  issued:
+    - year: 2018
+  language: Portuguese
+  publisher: Universidade de Brasília, Faculdade de Arquitetura e Urbanismo
+  publisher-place: Brasília
+  title: Narrativas do urbano nas Cidades Invisíveis de Italo Calvino
+  type: thesis
+
+- id: mennucci:2018catetinho2
   accessed:
     - year: 2019
       month: 1
@@ -198,6 +273,8 @@ references:
   author:
     - family: Mennucci
       given: Marina Martins
+    - family: Palazzo
+      given: Pedro P.
     - family: Palazzo
       given: Pedro P.
   container-title: Building knowledge, constructing histories
@@ -374,6 +451,21 @@ references:
   URL: >-
     https://even3.com.br/anais/11mestreseconselheiros/167873-elementos-da-matriz-urbana-portuguesa-em-goias--vila-boa-e-suas-identidades-culturais
 
+- id: oliveira:2022lugares
+  author:
+    - family: Oliveira
+      given: Irina Alencar
+      dropping-particle: de
+  event-place: Brasília
+  genre: Tese (Doutorado em Arquitetura e Urbanismo)
+  issued:
+    - year: 2022
+  language: Portuguese
+  publisher: Universidade de Brasília, Faculdade de Arquitetura e Urbanismo
+  publisher-place: Brasília
+  title: Lugares de memória e apropriações coletivas na cidade de Goiás
+  type: thesis
+
 - id: palazzo:2017cidades
   accessed:
     - year: 2018
@@ -460,7 +552,7 @@ references:
   title-short: Patrimonialização e exemplaridade da arquitetura religiosa
   type: paper-conference
 
-- id: palazzo:2018accouplement:2
+- id: palazzo:2018accouplement2
   accessed:
     - year: 2019
       month: 1
@@ -493,12 +585,16 @@ references:
   publisher: 'CRC : Balkema'
   publisher-place: Leiden
   source: Open WorldCat
-  title: 'Accouplement: Vicissitudes of an architectural motif in classical France'
+  title: '*Accouplement:* Vicissitudes of an architectural motif in classical France'
   title-short: Accouplement
   type: chapter
   volume: '2'
 
 - id: palazzo:2018gis-assisted10
+  accessed:
+    - year: 2021
+      month: 3
+      day: 10
   author:
     - family: Palazzo
       given: Pedro P.
@@ -512,6 +608,7 @@ references:
     Study in Planaltina, Brazil
   title-short: GIS-Assisted Identification of Historic Districts
   type: article-journal
+  URL: http://www.ncpe.us/publications/volume-10-2018/
   volume: '10'
 
 - id: palazzo:2018gis3
@@ -669,6 +766,23 @@ references:
   URL: >-
     https://saladeimprensa.ces.uc.pt/index.php?col=canalces&id=31244%23.X4A4LdBKiUk
 
+- id: pereira:2020arquitetura
+  author:
+    - family: Pereira
+      given: Octávio Scapin Costa
+  event-place: Brasília
+  genre: Dissertação (Mestrado em Arquitetura e Urbanismo)
+  issued:
+    - year: 2020
+  language: Portuguese
+  publisher: Universidade de Brasília, Faculdade de Arquitetura e Urbanismo
+  publisher-place: Brasília
+  title: >-
+    Arquitetura e Psicanálise: Atravessamentos teóricos a partir da década de
+    1960
+  title-short: Arquitetura e psicanálise
+  type: thesis
+
 - id: pimentellopes:2017especulacao
   abstract: >-
     Anais do Simpósio Científico 2017 - ICOMOS BRASIL (978-85-5722-038-6) - A
@@ -794,4 +908,19 @@ references:
   title-short: Relações de escala na superquadra de Brasília
   type: paper-conference
   URL: http://anpur.org.br/xviiienanpur/anaisadmin/capapdf.php?reqid=972
+
+- id: solorzano:2020superquadra
+  author:
+    - family: Solórzano
+      given: Gabriel Ernesto Moura
+  event-place: Brasília
+  genre: Dissertação (Mestrado em Arquitetura e Urbanismo)
+  issued:
+    - year: 2020
+  language: Portuguese
+  publisher: Universidade de Brasília, Faculdade de Arquitetura e Urbanismo
+  publisher-place: Brasília
+  title: 'Superquadra de Brasília: projeto, arranjo, percepção'
+  title-short: Superquadra de Brasília
+  type: thesis
 ...
