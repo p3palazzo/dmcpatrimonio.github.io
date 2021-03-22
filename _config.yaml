@@ -152,12 +152,13 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-relative-links
 
-# Exclude {{{1
-# =======
+# Exclude & Keep {{{1
+# ==============
 exclude:
   - Gemfile
   - LICENSE
   - Makefile
+  - chicago-cv.csl
   - gemfiles/
   - node_modules/
   - .vendor/

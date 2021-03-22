@@ -3,9 +3,9 @@ gem "jekyll", "~> 4.2.0"
 gem "minima", "~>2.5.1"
 group :jekyll_plugins do
   gem "jekyll-feed"
+  gem "jekyll-pandoc"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
-  gem "jekyll-pandoc"
   # Sassc is preferred to the legacy ruby-sass
   gem "sassc"
   # Required GitHub Pages plugins below
